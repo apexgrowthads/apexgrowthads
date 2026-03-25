@@ -1438,7 +1438,7 @@
 
   <section class="hero" id="home">
     <div class="container">
-      <div class="badge reveal"><i class="fa-solid fa-bolt"></i> India'S Premium Performance Marketing for Serious Businesses</div>
+      <div class="badge reveal"><i class="fa-solid fa-bolt"></i> India's Premium Performance Marketing for Serious Businesses</div>
 
       <h1 class="reveal">
         Scale Your Business with
@@ -1542,7 +1542,6 @@
       <p class="section-subtitle reveal">
         At Apex Growth Ads, we do not just launch ads. We build complete performance ecosystems that turn attention into inquiries, inquiries into qualified leads, and leads into scalable revenue.
       </p>
-      
 
       <div class="grid-2">
         <div class="feature-card glass reveal">
@@ -1555,7 +1554,7 @@
         <div class="feature-card glass reveal">
           <h3>Why Choose Us</h3>
           <p>
-           Founder-led by Vishnu Vardhan, At Apex Growth Ads, we don’t just run campaigns — we build scalable growth systems that deliver consistent, measurable results. Our approach combines strategic thinking, high-impact creative execution, and data-driven precision to help brands scale with confidence.
+            Founder-led by Vishnu Vardhan, At Apex Growth Ads, we don’t just run campaigns — we build scalable growth systems that deliver consistent, measurable results. Our approach combines strategic thinking, high-impact creative execution, and data-driven precision to help brands scale with confidence.
           </p>
         </div>
       </div>
@@ -2193,10 +2192,29 @@
     });
 
     function handleSubmit(event) {
-      event.preventDefault();
-      alert("Thank you! Your strategy call request has been submitted.");
-      event.target.reset();
-    }
+ event.preventDefault();
+
+  const formData = new FormData();
+  formData.append("name", document.getElementById("name").value);
+  formData.append("email", document.getElementById("email").value);
+  formData.append("phone", document.getElementById("phone").value);
+  formData.append("company", document.getElementById("company").value);
+  formData.append("message", document.getElementById("message").value);
+
+  fetch("https://script.google.com/macros/s/AKfycbw9Qvi0zfrm5VJSR9KYWVP4kinguORLeTEYxaZrxHTdpXgWxEXi_qcNJ3vB4AskzVF4/exec", {
+    method: "POST",
+    body: formData
+  })
+  .then(response => response.text())
+  .then(data => {
+    alert("Form submitted successfully ✅");
+    event.target.reset();
+  })
+  .catch(error => {
+    alert("Error submitting form ❌");
+    console.error(error);
+  });
+}
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
