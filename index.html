@@ -3,2121 +3,1214 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apex Growth Ads | India's Premium Performance Marketing Agency</title>
-  <meta
-    name="description"
-    content="Apex Growth Ads helps businesses scale with Meta Ads, Google Ads, premium funnels, creative systems, and performance marketing built for serious growth."
-  />
-
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-  />
-
+  <title>Apex Growth Ads | Ultimate 3D Performance Marketing Website</title>
+  <meta name="description" content="Apex Growth Ads is Hyderabad's premium performance marketing agency for Meta Ads, Google Ads, funnels, lead generation, real estate marketing, retargeting, and conversion-focused growth systems." />
+  <meta name="theme-color" content="#050505" />
+  <link rel="icon" href="logo.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
-    :root{
-      --bg:#050608;
-      --bg-2:#09101b;
-      --bg-3:#0d1524;
-      --card:rgba(16,20,30,0.76);
-      --card-2:rgba(10,13,20,0.92);
-      --text:#ffffff;
-      --muted:#b8c1cf;
-      --gold:#f4b400;
-      --gold-2:#ffd24d;
-      --gold-3:#fff0a6;
-      --line:rgba(255,255,255,.08);
-      --gold-line:rgba(255,210,77,.18);
-      --green:#25d366;
-      --shadow:0 24px 60px rgba(0,0,0,0.45);
-      --shadow-gold:0 18px 40px rgba(244,180,0,0.16);
-      --radius:26px;
-      --container:1240px;
+    :root {
+      --bg: #040404;
+      --bg-soft: #0b0b0e;
+      --bg-panel: rgba(255,255,255,0.06);
+      --bg-panel-2: rgba(255,255,255,0.04);
+      --line: rgba(255,255,255,0.10);
+      --line-strong: rgba(255,255,255,0.16);
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.68);
+      --muted-2: rgba(255,255,255,0.50);
+      --red: #ff2020;
+      --red-2: #ff5757;
+      --white-soft: #f7f7f7;
+      --radius-xl: 34px;
+      --radius-lg: 28px;
+      --radius-md: 22px;
+      --container: 1280px;
+      --shadow-red: 0 0 30px rgba(255,32,32,0.18), 0 0 80px rgba(255,32,32,0.08);
+      --shadow-big: 0 30px 120px rgba(0,0,0,0.40);
     }
 
-    *{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
-
-    body{
-      font-family:'Inter',sans-serif;
-      color:var(--text);
-      overflow-x:hidden;
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
       background:
-        radial-gradient(circle at 10% 10%, rgba(244,180,0,.12), transparent 24%),
-        radial-gradient(circle at 90% 12%, rgba(255,210,77,.08), transparent 20%),
-        radial-gradient(circle at 50% 34%, rgba(38,84,173,.14), transparent 30%),
-        linear-gradient(180deg, #040506 0%, #07090e 42%, #08111d 100%);
-      line-height:1.75;
-      letter-spacing:.2px;
-      position:relative;
+        radial-gradient(circle at top left, rgba(255,32,32,0.12), transparent 28%),
+        radial-gradient(circle at 90% 5%, rgba(255,255,255,0.06), transparent 18%),
+        linear-gradient(180deg, #030303 0%, #09090c 50%, #030303 100%);
+      color: var(--text);
+      overflow-x: hidden;
     }
 
-    body::before{
-      content:"";
-      position:fixed;
-      inset:0;
-      pointer-events:none;
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
       background-image:
-        linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
-      background-size:80px 80px;
-      mask-image:radial-gradient(circle at center, rgba(0,0,0,.9), transparent 85%);
-      opacity:.22;
-      z-index:0;
+        linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 54px 54px;
+      mask-image: radial-gradient(circle at center, black, transparent 78%);
+      pointer-events: none;
+      opacity: .18;
+      z-index: 0;
     }
 
-    .bg-orb{
-      position:fixed;
-      border-radius:999px;
-      filter:blur(90px);
-      pointer-events:none;
-      z-index:0;
-      opacity:.8;
-      animation:floatOrb 14s ease-in-out infinite alternate;
+    .noise {
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      opacity: .05;
+      z-index: 1;
+      mix-blend-mode: soft-light;
+      background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/></filter><rect width='160' height='160' filter='url(%23n)' opacity='1'/></svg>");
     }
 
-    .orb-1{
-      width:280px;height:280px;
-      left:-80px;top:120px;
-      background:rgba(244,180,0,.10);
+    #webgl-canvas {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      z-index: 2;
+      pointer-events: none;
+      opacity: .96;
     }
 
-    .orb-2{
-      width:340px;height:340px;
-      right:-80px;top:340px;
-      background:rgba(67,117,225,.12);
-      animation-duration:18s;
+    .cursor-glow {
+      position: fixed;
+      width: 380px;
+      height: 380px;
+      left: 0;
+      top: 0;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255,32,32,0.17), rgba(255,255,255,0.08), transparent 72%);
+      filter: blur(36px);
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      z-index: 3;
     }
 
-    .orb-3{
-      width:240px;height:240px;
-      left:35%;bottom:10%;
-      background:rgba(255,210,77,.08);
-      animation-duration:16s;
+    .progress {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 0%;
+      height: 3px;
+      background: linear-gradient(90deg, #ffffff, #ff2020, #ffffff);
+      box-shadow: 0 0 20px rgba(255,32,32,.45);
+      z-index: 120;
     }
 
-    @keyframes floatOrb{
-      0%{transform:translateY(0) translateX(0) scale(1)}
-      100%{transform:translateY(35px) translateX(20px) scale(1.08)}
+    .loader {
+      position: fixed;
+      inset: 0;
+      background: #020202;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 140;
+      transition: opacity .8s ease, visibility .8s ease;
+    }
+    .loader.hidden { opacity: 0; visibility: hidden; }
+    .loader-box { text-align: center; }
+    .loader-ring {
+      width: 92px; height: 92px; border-radius: 50%;
+      margin: 0 auto 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-top-color: #fff;
+      border-right-color: var(--red);
+      animation: spin 1.7s linear infinite;
+    }
+    .loader p:first-of-type {
+      color: rgba(255,255,255,.58);
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: .45em;
+      margin-bottom: 10px;
+    }
+    .loader p:last-of-type {
+      font-size: 30px;
+      font-weight: 800;
     }
 
-    a{text-decoration:none;color:inherit}
-    ul{list-style:none}
-    img{max-width:100%;display:block}
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    @keyframes floatOne { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-16px)} }
+    @keyframes floatTwo { 0%,100%{transform:translateY(0)} 50%{transform:translateY(14px)} }
+    @keyframes floatThree { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    @keyframes glowLine { from { background-position: 0% } to { background-position: 200% } }
 
-    h1,h2,.section-title,.trust-heading,.final-cta-title,.logo-text{
-      font-family:'Cinzel',serif;
-      letter-spacing:-.02em;
+    .wrap { position: relative; z-index: 5; }
+    .container { width: min(var(--container), calc(100% - 32px)); margin: 0 auto; }
+    .section { padding: 110px 0; position: relative; }
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(34px);
+      transition: opacity .85s ease, transform .85s ease;
+    }
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
     }
 
-    .container{
-      width:min(calc(100% - 32px), var(--container));
-      margin:0 auto;
-      position:relative;
-      z-index:1;
+    .section-head {
+      max-width: 780px;
+      margin-bottom: 56px;
+    }
+    .section-head.center { margin-inline: auto; text-align: center; }
+    .section-head h2 {
+      font-size: clamp(34px, 5vw, 60px);
+      line-height: 1.02;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+    .section-head p {
+      color: var(--muted);
+      line-height: 1.85;
+      font-size: 16px;
     }
 
-    .section{
-      padding:100px 0;
-      position:relative;
-      z-index:1;
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.10);
+      background: rgba(255,255,255,0.05);
+      color: rgba(255,255,255,.72);
+      text-transform: uppercase;
+      letter-spacing: .32em;
+      font-size: 12px;
+      backdrop-filter: blur(14px);
+      margin-bottom: 22px;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #fff, #ff2020);
+      box-shadow: var(--shadow-red);
     }
 
-    .section-title{
-      text-align:center;
-      font-size:clamp(2.4rem,4vw,4.3rem);
-      line-height:1.08;
-      font-weight:800;
-      margin-bottom:14px;
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 110;
+      backdrop-filter: blur(16px);
+      background: rgba(0,0,0,0.34);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .nav {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      color: white;
+      text-decoration: none;
+    }
+    .brand-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      box-shadow: var(--shadow-red);
+      font-size: 20px;
+    }
+    .brand strong { display: block; font-size: 13px; letter-spacing: .24em; }
+    .brand span { color: rgba(255,255,255,.52); font-size: 12px; }
+    .nav-links { display: flex; align-items: center; gap: 28px; }
+    .nav-links a {
+      color: rgba(255,255,255,.72);
+      text-decoration: none;
+      font-size: 14px;
+      position: relative;
+      transition: .3s ease;
+    }
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      width: 0;
+      height: 1px;
+      background: linear-gradient(90deg, #fff, #ff2020);
+      transition: .3s ease;
+    }
+    .nav-links a:hover { color: white; }
+    .nav-links a:hover::after { width: 100%; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      text-decoration: none;
+      color: white;
+      border-radius: 999px;
+      padding: 16px 24px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.14);
+      backdrop-filter: blur(14px);
+      font-weight: 700;
+      font-size: 14px;
+      transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+      will-change: transform;
+      cursor: pointer;
+    }
+    .btn:hover { transform: translateY(-3px); }
+    .btn.primary {
+      background: linear-gradient(90deg, rgba(255,255,255,0.15), rgba(255,32,32,0.3));
+      border-color: rgba(255,32,32,0.24);
+      box-shadow: var(--shadow-red);
     }
 
-    .section-title span,
-    .trust-heading span,
-    .final-cta-title span,
-    .hero h1 span,
-    .gold-text{
-      background:linear-gradient(135deg,var(--gold-3) 0%, var(--gold-2) 35%, var(--gold) 70%, var(--gold-3) 100%);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-      background-clip:text;
+    .hero {
+      min-height: calc(100vh - 84px);
+      display: grid;
+      align-items: center;
+      padding: 40px 0 90px;
     }
-
-    .section-subtitle{
-      max-width:860px;
-      margin:0 auto 56px;
-      text-align:center;
-      color:var(--muted);
-      font-size:1.08rem;
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.05fr 0.95fr;
+      gap: 48px;
+      align-items: center;
     }
-
-    .glass{
+    .hero-card {
+      position: relative;
+      border-radius: 34px;
+      padding: 34px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: var(--shadow-big);
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+      transform-style: preserve-3d;
+    }
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
       background:
-        linear-gradient(180deg, rgba(31,38,56,.65), rgba(13,17,25,.88)),
-        linear-gradient(120deg, rgba(255,255,255,.03), rgba(255,255,255,0));
-      border:1px solid var(--gold-line);
-      box-shadow:
-        var(--shadow),
-        inset 0 1px 0 rgba(255,255,255,.04);
-      backdrop-filter:blur(18px);
-      -webkit-backdrop-filter:blur(18px);
+        radial-gradient(circle at top left, rgba(255,255,255,0.18), transparent 26%),
+        radial-gradient(circle at bottom right, rgba(255,32,32,0.18), transparent 30%);
+      pointer-events: none;
     }
-
-    .btn{
-      display:inline-flex;
-      align-items:center;
-      justify-content:center;
-      gap:10px;
-      min-height:58px;
-      padding:0 30px;
-      border-radius:18px;
-      font-size:1rem;
-      font-weight:800;
-      border:1px solid transparent;
-      transition:.35s ease;
-      cursor:pointer;
-      position:relative;
-      overflow:hidden;
-      isolation:isolate;
+    h1 {
+      font-size: clamp(52px, 6vw, 90px);
+      line-height: .95;
+      letter-spacing: -0.055em;
+      margin-bottom: 22px;
+      position: relative;
     }
-
-    .btn::before{
-      content:"";
-      position:absolute;
-      inset:0;
-      background:linear-gradient(120deg, transparent 20%, rgba(255,255,255,.22) 50%, transparent 80%);
-      transform:translateX(-120%);
-      transition:.7s ease;
-      z-index:-1;
+    h1 .grad {
+      background: linear-gradient(90deg, #ffffff 0%, #ffd9d9 35%, #ff2020 100%);
+      -webkit-background-clip: text;
+      color: transparent;
     }
-
-    .btn:hover::before{transform:translateX(120%)}
-
-    .btn-primary{
-      color:#141414;
-      background:linear-gradient(135deg,#ffe58e 0%, #ffd24d 38%, #f4b400 100%);
-      box-shadow:0 22px 40px rgba(244,180,0,.24);
-      border:1px solid rgba(255,225,135,.42);
-      letter-spacing:.35px;
+    .hero-copy {
+      font-size: 17px;
+      line-height: 1.9;
+      color: var(--muted);
+      max-width: 760px;
+      position: relative;
     }
-
-    .btn-primary:hover{
-      transform:translateY(-4px) scale(1.01);
-      box-shadow:0 28px 54px rgba(244,180,0,.34);
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-top: 28px;
+      position: relative;
     }
-
-    .btn-secondary{
-      color:#fff;
-      background:rgba(255,255,255,.05);
-      border-color:rgba(255,255,255,.11);
+    .hero-side { min-height: 620px; position: relative; }
+    .side-glass {
+      position: absolute;
+      border-radius: 24px;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      backdrop-filter: blur(18px);
+      box-shadow: 0 20px 80px rgba(0,0,0,0.32);
+      padding: 18px;
+      transform-style: preserve-3d;
     }
+    .side-glass h4 { font-size: 24px; margin-bottom: 4px; }
+    .side-glass span { color: rgba(255,255,255,.60); font-size: 12px; }
+    .sg-1 { left: 0; top: 80px; animation: floatOne 6s ease-in-out infinite; }
+    .sg-2 { right: 0; top: 180px; animation: floatTwo 7s ease-in-out infinite; }
+    .sg-3 { left: 80px; bottom: 100px; animation: floatThree 6.5s ease-in-out infinite; }
 
-    .btn-secondary:hover{
-      transform:translateY(-4px);
-      background:rgba(255,255,255,.09);
-      border-color:rgba(255,210,77,.18);
+    .stats, .logo-strip, .offer-grid, .grid-4, .grid-3, .grid-2, .industry-grid, .process-grid, .comparison-grid, .guarantee-grid, .footer-grid {
+      display: grid;
+      gap: 22px;
     }
+    .stats { grid-template-columns: repeat(3, 1fr); margin-top: 30px; position: relative; }
+    .logo-strip { grid-template-columns: repeat(5, 1fr); }
+    .offer-grid { grid-template-columns: repeat(2, 1fr); }
+    .grid-4 { grid-template-columns: repeat(4, 1fr); }
+    .grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .industry-grid { grid-template-columns: repeat(4, 1fr); }
+    .process-grid { grid-template-columns: repeat(5, 1fr); }
+    .comparison-grid { grid-template-columns: 1fr 1fr; }
+    .guarantee-grid { grid-template-columns: repeat(3, 1fr); }
+    .footer-grid { grid-template-columns: 1.6fr 1fr 1fr; }
 
-    .btn-whatsapp{
-      width:100%;
-      color:#fff;
-      background:linear-gradient(135deg,#3cdf71,#1fbe55);
-      box-shadow:0 18px 34px rgba(37,211,102,.24);
+    .card, .case-card, .price-card, .panel, .stat, .logo-pill, .process-card, .industry-card, .comparison-card, .guarantee-card {
+      position: relative;
+      border-radius: 28px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(16px);
+      box-shadow: 0 20px 70px rgba(0,0,0,.22);
+      overflow: hidden;
+      transform-style: preserve-3d;
+      transition: transform .35s ease, border-color .35s ease, box-shadow .35s ease;
     }
-
-    .btn-whatsapp:hover{
-      transform:translateY(-3px);
-      box-shadow:0 22px 38px rgba(37,211,102,.30);
+    .card:hover, .case-card:hover, .price-card:hover, .panel:hover, .stat:hover, .logo-pill:hover, .process-card:hover, .industry-card:hover, .comparison-card:hover, .guarantee-card:hover {
+      transform: translateY(-8px) rotateX(5deg) rotateY(-5deg);
+      border-color: rgba(255,32,32,0.26);
+      box-shadow: 0 26px 100px rgba(255,32,32,.08);
     }
-
-    .navbar{
-      position:sticky;
-      top:0;
-      z-index:1000;
-      background:rgba(6,8,12,.72);
-      backdrop-filter:blur(18px);
-      border-bottom:1px solid rgba(255,255,255,.06);
-    }
-
-    .nav-wrap{
-      min-height:90px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:18px;
-    }
-
-    .brand{
-      display:flex;
-      align-items:center;
-      gap:14px;
-      font-weight:900;
-      font-size:1.3rem;
-      letter-spacing:-.02em;
-      text-transform:uppercase;
-    }
-
-    .brand-logo{
-      width:68px;
-      height:68px;
-      flex-shrink:0;
-      border-radius:20px;
-      display:grid;
-      place-items:center;
+    .card::before, .case-card::before, .price-card::before, .panel::before, .stat::before, .logo-pill::before, .process-card::before, .industry-card::before, .comparison-card::before, .guarantee-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
       background:
-        radial-gradient(circle at 30% 30%, rgba(255,255,255,.26), transparent 36%),
-        linear-gradient(135deg,#ffea9c 0%, #ffd24d 38%, #f4b400 100%);
-      box-shadow:
-        0 16px 36px rgba(244,180,0,.28),
-        inset 0 1px 0 rgba(255,255,255,.26);
-      border:1px solid rgba(255,230,150,.44);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .brand-logo svg{
-      width:34px;
-      height:34px;
-      fill:#121212;
-    }
-
-    .brand-copy{
-      display:flex;
-      flex-direction:column;
-      gap:2px;
-      line-height:1.05;
-    }
-
-    .logo-text{
-      font-size:1.2rem;
-      font-weight:800;
-    }
-
-    .logo-sub{
-      color:#dec572;
-      font-size:.72rem;
-      letter-spacing:.22em;
-      text-transform:uppercase;
-      font-weight:700;
-    }
-
-    .nav-links{
-      display:flex;
-      align-items:center;
-      gap:32px;
-    }
-
-    .nav-links a{
-      font-weight:700;
-      color:#f2f4f8;
-      transition:.25s ease;
-      position:relative;
-    }
-
-    .nav-links a::after{
-      content:"";
-      position:absolute;
-      left:0;
-      bottom:-8px;
-      width:0;
-      height:2px;
-      background:linear-gradient(90deg,var(--gold-2),var(--gold));
-      transition:.25s ease;
-    }
-
-    .nav-links a:hover{
-      color:var(--gold-2);
-    }
-
-    .nav-links a:hover::after{
-      width:100%;
-    }
-
-    .menu-btn{
-      display:none;
-      width:46px;
-      height:46px;
-      border-radius:12px;
-      border:1px solid rgba(255,255,255,.12);
-      background:transparent;
-      color:#fff;
-      font-size:1.2rem;
-      cursor:pointer;
-    }
-
-    .hero{
-      padding:112px 0 64px;
-      position:relative;
-      overflow:hidden;
-      text-align:center;
-    }
-
-    .hero::before,
-    .hero::after{
-      content:"";
-      position:absolute;
-      border-radius:999px;
-      filter:blur(110px);
-      pointer-events:none;
-    }
-
-    .hero::before{
-      width:360px;height:360px;
-      left:-40px;top:0;
-      background:rgba(244,180,0,.14);
-    }
-
-    .hero::after{
-      width:420px;height:420px;
-      right:-80px;top:80px;
-      background:rgba(46,96,188,.16);
-    }
-
-    .badge{
-      display:inline-flex;
-      align-items:center;
-      gap:10px;
-      padding:12px 20px;
-      border-radius:999px;
-      background:rgba(244,180,0,.08);
-      border:1px solid rgba(244,180,0,.18);
-      color:#f7d16b;
-      font-weight:700;
-      margin-bottom:24px;
-      box-shadow:0 12px 24px rgba(244,180,0,.08);
-    }
-
-    .hero h1{
-      font-size:clamp(3.2rem,7vw,7rem);
-      line-height:1.02;
-      font-weight:800;
-      max-width:1100px;
-      margin:0 auto 18px;
-      text-shadow:0 8px 30px rgba(244,180,0,.08);
-    }
-
-    .hero p{
-      max-width:900px;
-      margin:0 auto 36px;
-      color:#dfe6f2;
-      font-size:1.18rem;
-      font-weight:500;
-    }
-
-    .hero-actions{
-      display:flex;
-      justify-content:center;
-      gap:16px;
-      flex-wrap:wrap;
-      margin-bottom:48px;
-    }
-
-    .hero-panel{
-      padding:18px;
-      border-radius:30px;
-      margin-top:10px;
-    }
-
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.2fr .8fr;
-      gap:18px;
-      align-items:stretch;
-    }
-
-    .hero-showcase{
-      padding:30px;
-      border-radius:28px;
-      text-align:left;
-      min-height:100%;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .hero-showcase::before{
-      content:"";
-      position:absolute;
-      inset:auto -15% -45% auto;
-      width:260px;
-      height:260px;
-      border-radius:999px;
-      background:radial-gradient(circle, rgba(244,180,0,.22), transparent 65%);
-      filter:blur(30px);
-      pointer-events:none;
-    }
-
-    .hero-kicker{
-      color:#dec572;
-      text-transform:uppercase;
-      letter-spacing:.18em;
-      font-size:.75rem;
-      font-weight:800;
-      margin-bottom:12px;
-    }
-
-    .hero-showcase h3{
-      font-size:1.9rem;
-      line-height:1.15;
-      margin-bottom:12px;
-      font-weight:900;
-    }
-
-    .hero-showcase p{
-      margin:0 0 18px;
-      max-width:none;
-      font-size:1rem;
-      color:var(--muted);
-    }
-
-    .mini-metrics{
-      display:grid;
-      grid-template-columns:repeat(3,1fr);
-      gap:14px;
-      margin-top:18px;
-    }
-
-    .mini-metric{
-      padding:18px 14px;
-      border-radius:20px;
-      background:rgba(255,255,255,.03);
-      border:1px solid rgba(255,255,255,.06);
-      text-align:center;
-    }
-
-    .mini-metric strong{
-      display:block;
-      font-size:1.5rem;
-      font-weight:900;
-      color:#fff;
-      margin-bottom:4px;
-    }
-
-    .mini-metric span{
-      color:var(--muted);
-      font-size:.92rem;
-    }
-
-    .hero-side{
-      display:grid;
-      gap:18px;
-    }
-
-    .lux-card{
-      padding:22px;
-      border-radius:24px;
-      text-align:left;
-    }
-
-    .lux-card h4{
-      font-size:1.15rem;
-      font-weight:900;
-      margin-bottom:10px;
-    }
-
-    .lux-card p{
-      margin:0;
-      color:var(--muted);
-      font-size:.96rem;
-    }
-
-    .logo-strip-wrap{
-      margin-top:28px;
-      overflow:hidden;
-      border-radius:20px;
-      border:1px solid rgba(255,255,255,.06);
-      background:rgba(255,255,255,.03);
-    }
-
-    .logo-strip{
-      display:flex;
-      width:max-content;
-      animation:scrollLogos 24s linear infinite;
-    }
-
-    .logo-item{
-      min-width:220px;
-      padding:18px 28px;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      gap:12px;
-      color:#d4dae6;
-      font-weight:700;
-      letter-spacing:.04em;
-      text-transform:uppercase;
-      opacity:.9;
-      border-right:1px solid rgba(255,255,255,.05);
-    }
-
-    .logo-item i{
-      color:var(--gold-2);
-      font-size:1rem;
-    }
-
-    @keyframes scrollLogos{
-      from{transform:translateX(0)}
-      to{transform:translateX(-50%)}
-    }
-
-    .grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
-    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-    .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
-
-    .stat-card,
-    .feature-card,
-    .service-card,
-    .testimonial-card,
-    .pricing-card,
-    .case-card,
-    .metric-card,
-    .contact-box,
-    .footer-box,
-    .form-box{
-      border-radius:var(--radius);
-      transition:.35s ease;
-    }
-
-    .stat-card:hover,
-    .feature-card:hover,
-    .service-card:hover,
-    .testimonial-card:hover,
-    .pricing-card:hover,
-    .metric-card:hover,
-    .contact-box:hover,
-    .form-box:hover{
-      transform:translateY(-6px);
-      border-color:rgba(244,180,0,.22);
-      box-shadow:0 26px 54px rgba(0,0,0,.46);
-    }
-
-    .stat-card{
-      padding:32px 24px;
-      text-align:center;
-    }
-
-    .icon-circle,
-    .icon-box{
-      width:64px;
-      height:64px;
-      display:grid;
-      place-items:center;
-      color:var(--gold);
-      background:rgba(244,180,0,.1);
-      border:1px solid rgba(244,180,0,.22);
-      box-shadow:0 10px 24px rgba(244,180,0,.08);
-      font-weight:900;
-      font-size:1.1rem;
-    }
-
-    .icon-circle{
-      border-radius:999px;
-      margin:0 auto 18px;
-    }
-
-    .icon-box{
-      border-radius:18px;
-      margin:0 0 18px;
-    }
-
-    .stat-card h3{
-      font-size:2rem;
-      line-height:1.15;
-      font-weight:900;
-      margin-bottom:6px;
-    }
-
-    .stat-card p{color:var(--muted)}
-
-    .feature-card{
-      padding:34px;
-    }
-
-    .feature-card h3{
-      font-size:1.9rem;
-      font-weight:900;
-      margin-bottom:12px;
-    }
-
-    .feature-card p{
-      color:var(--muted);
-      font-size:1.05rem;
-    }
-
-    .trust-metric{
-      text-align:center;
-      padding:16px;
-    }
-
-    .trust-metric h4{
-      font-size:2.25rem;
-      line-height:1.1;
-      font-weight:900;
-      margin-bottom:4px;
-    }
-
-    .trust-metric p{color:var(--muted)}
-
-    .service-card{
-      padding:30px;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .service-card::after{
-      content:"";
-      position:absolute;
-      inset:auto -30px -50px auto;
-      width:120px;
-      height:120px;
-      border-radius:999px;
-      background:radial-gradient(circle, rgba(244,180,0,.15), transparent 70%);
-      filter:blur(18px);
-      pointer-events:none;
-    }
-
-    .service-card h3{
-      font-size:1.7rem;
-      line-height:1.15;
-      margin-bottom:10px;
-      font-weight:900;
-    }
-
-    .service-card p{
-      color:var(--muted);
-      margin-bottom:18px;
-    }
-
-    .service-card li,
-    .pricing-card li{
-      display:flex;
-      gap:10px;
-      color:#eef2f8;
-      font-weight:600;
-      margin-bottom:10px;
-    }
-
-    .service-card li::before{
-      content:"•";
-      color:var(--gold);
-      font-size:1.4rem;
-      line-height:1;
-    }
-
-    .case-stack{
-      display:grid;
-      gap:26px;
-    }
-
-    .case-card{
-      padding:28px;
-      display:grid;
-      grid-template-columns:1.1fr 2fr;
-      gap:24px;
-      align-items:center;
-    }
-
-    .case-left h3{
-      font-size:2rem;
-      line-height:1.1;
-      margin-bottom:12px;
-      font-weight:900;
-    }
-
-    .case-label{
-      color:#d9dce3;
-      font-weight:800;
-      font-size:.95rem;
-      text-transform:uppercase;
-      letter-spacing:.04em;
-      margin-bottom:4px;
-    }
-
-    .case-left p{
-      color:var(--muted);
-      margin-bottom:12px;
-    }
-
-    .case-metrics{
-      display:grid;
-      grid-template-columns:repeat(2,1fr);
-      gap:18px;
-    }
-
-    .metric-card{
-      background:rgba(10,12,18,.76);
-      border:1px solid rgba(255,255,255,.08);
-      padding:22px;
-      text-align:center;
-      box-shadow:var(--shadow);
-    }
-
-    .metric-card h4{
-      font-size:1rem;
-      font-weight:800;
-      text-transform:uppercase;
-      letter-spacing:.03em;
-      margin-bottom:10px;
-      color:#eef1f7;
-    }
-
-    .metric-small{color:#cfd6e1;font-size:.95rem}
-    .before{
-      color:#ff9c9c;
-      font-size:2rem;
-      font-weight:900;
-      line-height:1.1;
-      margin:6px 0;
-    }
-
-    .arrow{
-      color:var(--gold);
-      font-size:1.2rem;
-      font-weight:900;
-      margin:4px 0;
-    }
-
-    .after{
-      color:#74f49b;
-      font-size:2.1rem;
-      font-weight:900;
-      line-height:1.1;
-      margin-top:6px;
-    }
-
-    .pricing-card{
-      position:relative;
-      padding:32px 26px;
-      overflow:hidden;
-    }
-
-    .pricing-card.popular{
-      border:1px solid rgba(244,180,0,.38);
-      box-shadow:0 22px 50px rgba(244,180,0,.14);
-      transform:translateY(-6px);
-    }
-
-    .pricing-card.popular::before{
-      content:"";
-      position:absolute;
-      inset:-40% auto auto -20%;
-      width:220px;
-      height:220px;
-      border-radius:999px;
-      background:radial-gradient(circle, rgba(244,180,0,.18), transparent 68%);
-      filter:blur(26px);
-    }
-
-    .pricing-badge{
-      position:absolute;
-      top:-14px;
-      left:50%;
-      transform:translateX(-50%);
-      background:linear-gradient(135deg,var(--gold-2),var(--gold));
-      color:#141414;
-      padding:8px 14px;
-      border-radius:999px;
-      font-size:.82rem;
-      font-weight:900;
-      white-space:nowrap;
-      box-shadow:0 12px 28px rgba(244,180,0,.2);
-    }
-
-    .pricing-card h3{
-      text-align:center;
-      font-size:1.85rem;
-      font-weight:900;
-      margin-bottom:6px;
-    }
-
-    .pricing-desc{
-      text-align:center;
-      color:var(--muted);
-      margin-bottom:18px;
-      min-height:48px;
-    }
-
-    .price{
-      text-align:center;
-      font-size:3.15rem;
-      line-height:1;
-      font-weight:900;
-      margin-bottom:8px;
-    }
-
-    .price small{
-      font-size:1rem;
-      color:var(--muted);
-      font-weight:700;
-    }
-
-    .tax-note{
-      text-align:center;
-      color:#e7d48b;
-      font-size:.94rem;
-      margin-bottom:18px;
-    }
-
-    .pricing-card li::before{
-      content:"✓";
-      color:var(--gold);
-      font-weight:900;
-    }
-
-    .pricing-card .btn{
-      width:100%;
-      margin-top:18px;
-    }
-
-    .enterprise-cta{
-      text-align:center;
-      padding:40px 24px;
-      margin-top:28px;
-      border-radius:30px;
-      background:
-        linear-gradient(135deg, rgba(58,42,8,.82), rgba(22,17,14,.74)),
-        radial-gradient(circle at center, rgba(244,180,0,.10), transparent 60%);
-      border:1px solid rgba(244,180,0,.16);
-      box-shadow:var(--shadow);
-      position:relative;
-      overflow:hidden;
-    }
-
-    .enterprise-cta::before{
-      content:"";
-      position:absolute;
-      inset:auto auto -80px -80px;
-      width:220px;
-      height:220px;
-      background:radial-gradient(circle, rgba(255,220,110,.16), transparent 68%);
-      border-radius:999px;
-      filter:blur(18px);
-    }
-
-    .enterprise-cta h3{
-      font-size:2.3rem;
-      margin-bottom:10px;
-      font-weight:900;
-      position:relative;
-      z-index:1;
-    }
-
-    .enterprise-cta p{
-      color:#e4e4e4;
-      margin-bottom:18px;
-      position:relative;
-      z-index:1;
-    }
-
-    .trust-heading{
-      text-align:center;
-      font-size:clamp(2.2rem,4vw,4rem);
-      line-height:1.05;
-      font-weight:800;
-      margin-bottom:14px;
-    }
-
-    .testimonial-card{
-      padding:26px;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .testimonial-card::after{
-      content:"";
-      position:absolute;
-      top:-20px;
-      right:-20px;
-      width:90px;
-      height:90px;
-      border-radius:999px;
-      background:radial-gradient(circle, rgba(244,180,0,.12), transparent 70%);
-      filter:blur(18px);
-      pointer-events:none;
-    }
-
-    .quote-mark{
-      color:var(--gold);
-      font-size:2rem;
-      line-height:1;
-      margin-bottom:8px;
-    }
-
-    .stars{
-      color:var(--gold);
-      letter-spacing:2px;
-      margin-bottom:14px;
-    }
-
-    .testimonial-card p{
-      color:#eef2f7;
-      margin-bottom:18px;
-      min-height:150px;
-    }
-
-    .testimonial-footer{
-      border-top:1px solid rgba(255,255,255,.08);
-      padding-top:14px;
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      align-items:flex-end;
-      flex-wrap:wrap;
-    }
-
-    .testimonial-footer strong{
-      display:block;
-      font-size:1.05rem;
-    }
-
-    .testimonial-footer span{
-      color:var(--muted);
-      font-size:.94rem;
-    }
-
-    .tag,
-    .result-badge{
-      display:inline-flex;
-      align-items:center;
-      padding:7px 12px;
-      border-radius:999px;
-      font-size:.84rem;
-      font-weight:700;
-    }
-
-    .tag{
-      color:#dfe3ea;
-      background:rgba(255,255,255,.06);
-      border:1px solid rgba(255,255,255,.08);
-    }
-
-    .result-badge{
-      width:100%;
-      margin-top:14px;
-      border-radius:14px;
-      color:#ffe494;
-      background:rgba(244,180,0,.16);
-      border:1px solid rgba(244,180,0,.18);
-      justify-content:flex-start;
-    }
-
-    .faq-wrap{
-      max-width:920px;
-      margin:0 auto;
-      display:grid;
-      gap:16px;
-    }
-
-    .faq-item{
-      border-radius:22px;
-      overflow:hidden;
-      transition:.3s ease;
-    }
-
-    .faq-question{
-      width:100%;
-      background:transparent;
-      border:none;
-      color:#fff;
-      padding:22px 24px;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-      cursor:pointer;
-      font:inherit;
-      font-weight:800;
-      font-size:1.03rem;
-      text-align:left;
-    }
-
-    .faq-question i{
-      color:var(--gold-2);
-      transition:.3s ease;
-    }
-
-    .faq-answer{
-      max-height:0;
-      overflow:hidden;
-      transition:max-height .35s ease;
-      color:var(--muted);
-      padding:0 24px;
-    }
-
-    .faq-item.active .faq-answer{
-      max-height:220px;
-      padding:0 24px 22px;
-    }
-
-    .faq-item.active .faq-question i{
-      transform:rotate(180deg);
-    }
-
-    .final-cta-title{
-      text-align:center;
-      font-size:clamp(2.2rem,4vw,4rem);
-      line-height:1.05;
-      font-weight:800;
-      margin-bottom:14px;
-    }
-
-    .contact-grid{
-      display:grid;
-      grid-template-columns:.92fr 1.08fr;
-      gap:24px;
-      align-items:start;
-    }
-
-    .contact-box,
-    .form-box{
-      padding:28px;
-      border-radius:30px;
-    }
-
-    .offer-card{
-      padding:28px;
-      border-radius:22px;
-      margin-bottom:22px;
-      background:linear-gradient(135deg,#f8d86a,#daa107);
-      color:#1a1a1a;
-      box-shadow:0 16px 36px rgba(244,180,0,.16);
-    }
-
-    .offer-card h3{
-      font-size:2rem;
-      line-height:1.15;
-      margin-bottom:12px;
-      font-weight:900;
-    }
-
-    .offer-card li{
-      margin-bottom:10px;
-      font-weight:700;
-    }
-
-    .contact-info{
-      display:grid;
-      gap:14px;
-      margin-bottom:18px;
-    }
-
-    .contact-row{
-      display:flex;
-      align-items:flex-start;
-      gap:14px;
-      padding:16px;
-      border-radius:18px;
-    }
-
-    .contact-row .icon-box{
-      margin:0;
-      width:50px;
-      height:50px;
-      flex-shrink:0;
-      border-radius:14px;
-      font-size:1rem;
-    }
-
-    .contact-row strong{
-      display:block;
-      margin-bottom:4px;
-    }
-
-    .contact-row p,
-    .contact-row a{
-      color:var(--muted);
-      word-break:break-word;
-    }
-
-    form{
-      display:grid;
-      gap:16px;
-    }
-
-    .field{
-      display:grid;
-      gap:8px;
-    }
-
-    label{
-      font-weight:800;
-      color:#f2f4f7;
-    }
-
-    input, textarea{
-      width:100%;
-      padding:15px 16px;
-      border-radius:14px;
-      border:1px solid rgba(255,255,255,.10);
-      background:rgba(8,10,16,.76);
-      color:#fff;
-      outline:none;
-      transition:.25s ease;
-      font:inherit;
-    }
-
-    input:focus, textarea:focus{
-      border-color:rgba(244,180,0,.5);
-      box-shadow:0 0 0 4px rgba(244,180,0,.08);
-    }
-
-    textarea{
-      min-height:140px;
-      resize:vertical;
-    }
-
-    .footer{
-      border-top:1px solid rgba(255,255,255,.06);
-      padding:40px 0 28px;
-      background:rgba(0,0,0,.18);
-      position:relative;
-      z-index:1;
-      margin-bottom:86px;
-    }
-
-    .footer-grid{
-      display:grid;
-      grid-template-columns:1.2fr .8fr .8fr;
-      gap:24px;
-      margin-bottom:24px;
-    }
-
-    .footer-brand{
-      display:flex;
-      align-items:center;
-      gap:12px;
-      font-size:1.15rem;
-      font-weight:900;
-      margin-bottom:12px;
-      text-transform:uppercase;
-    }
-
-    .footer p,
-    .footer li,
-    .footer a{
-      color:var(--muted);
-    }
-
-    .footer h4{
-      font-size:1.05rem;
-      margin-bottom:12px;
-      color:#fff;
-    }
-
-    .footer li{margin-bottom:10px}
-
-    .socials{
-      display:flex;
-      gap:12px;
-      margin-top:18px;
-      flex-wrap:wrap;
-    }
-
-    .social{
-      width:42px;
-      height:42px;
-      border-radius:12px;
-      display:grid;
-      place-items:center;
-      background:rgba(255,255,255,.07);
-      border:1px solid rgba(255,255,255,.1);
-      transition:.25s ease;
-    }
-
-    .social:hover{
-      transform:translateY(-2px);
-      border-color:rgba(244,180,0,.22);
-      color:var(--gold-2);
-    }
-
-    .copyright{
-      padding-top:18px;
-      border-top:1px solid rgba(255,255,255,.06);
-      display:flex;
-      justify-content:space-between;
-      gap:12px;
-      flex-wrap:wrap;
-      color:#9ca4b5;
-      font-size:.95rem;
-    }
-
-    .floating-whatsapp{
-      position:fixed;
-      right:18px;
-      bottom:86px;
-      z-index:999;
-      min-height:58px;
-      padding:0 18px;
-      border-radius:999px;
-      background:linear-gradient(135deg,#3cdf71,#1fbe55);
-      color:#fff;
-      box-shadow:0 18px 34px rgba(37,211,102,.28);
-      animation:pulse 2.1s infinite;
-    }
-
-    .sticky-cta{
-      position:fixed;
-      left:0;
-      right:0;
-      bottom:0;
-      z-index:998;
-      padding:10px 16px;
-      background:rgba(6,8,12,.9);
-      border-top:1px solid rgba(255,255,255,.08);
-      backdrop-filter:blur(16px);
-    }
-
-    .sticky-cta-inner{
-      width:min(calc(100% - 8px), 1200px);
-      margin:0 auto;
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap:16px;
-    }
-
-    .sticky-copy{
-      display:flex;
-      flex-direction:column;
-      gap:2px;
-    }
-
-    .sticky-copy strong{
-      font-size:1rem;
-    }
-
-    .sticky-copy span{
-      font-size:.9rem;
-      color:var(--muted);
-    }
-
-    .sticky-actions{
-      display:flex;
-      gap:12px;
-      flex-wrap:wrap;
-    }
-
-    @keyframes pulse{
-      0%{box-shadow:0 0 0 0 rgba(37,211,102,.32),0 18px 34px rgba(37,211,102,.24)}
-      70%{box-shadow:0 0 0 18px rgba(37,211,102,0),0 18px 34px rgba(37,211,102,.24)}
-      100%{box-shadow:0 0 0 0 rgba(37,211,102,0),0 18px 34px rgba(37,211,102,.24)}
-    }
-
-    .reveal{
-      opacity:0;
-      transform:translateY(28px);
-      transition:opacity .75s ease, transform .75s ease;
-    }
-
-    .reveal.active{
-      opacity:1;
-      transform:translateY(0);
-    }
-
-    @media (max-width:1100px){
-      .grid-3,.grid-4,.footer-grid{grid-template-columns:repeat(2,1fr)}
-      .case-card,.contact-grid,.grid-2,.hero-grid{grid-template-columns:1fr}
-      .mini-metrics{grid-template-columns:repeat(3,1fr)}
-    }
-
-    @media (max-width:820px){
-      .menu-btn{display:block}
-
-      .nav-links{
-        display:none;
-        position:absolute;
-        top:90px;
-        left:0;
-        right:0;
-        flex-direction:column;
-        gap:18px;
-        background:rgba(7,8,12,.98);
-        padding:24px;
-        border-bottom:1px solid rgba(255,255,255,.06);
+        radial-gradient(circle at top left, rgba(255,255,255,0.12), transparent 25%),
+        radial-gradient(circle at bottom right, rgba(255,32,32,0.18), transparent 30%);
+      opacity: 0;
+      transition: .35s ease;
+      pointer-events: none;
+    }
+    .card:hover::before, .case-card:hover::before, .price-card:hover::before, .panel:hover::before, .stat:hover::before, .logo-pill:hover::before, .process-card:hover::before, .industry-card:hover::before, .comparison-card:hover::before, .guarantee-card:hover::before { opacity: 1; }
+
+    .card, .panel, .case-card, .price-card, .process-card, .industry-card, .comparison-card, .guarantee-card { padding: 28px; }
+    .icon {
+      width: 58px; height: 58px; border-radius: 18px;
+      display: grid; place-items: center;
+      background: rgba(0,0,0,.28);
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow-red);
+      margin-bottom: 18px;
+      font-size: 24px;
+    }
+    .card h3, .case-card h3, .price-card h3, .process-card h3, .industry-card h3, .comparison-card h3, .guarantee-card h3 {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    .card p, .case-card p, .price-card p, .process-card p, .industry-card p, .comparison-card p, .guarantee-card p {
+      color: var(--muted);
+      line-height: 1.82;
+    }
+
+    .logo-pill {
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 88px;
+      color: rgba(255,255,255,.76);
+      font-weight: 700;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .bullet-list {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .bullet-list li {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+      color: rgba(255,255,255,.74);
+      line-height: 1.7;
+    }
+    .bullet-list li::before {
+      content: "✓";
+      font-weight: 800;
+      color: white;
+    }
+
+    .kpi h3 { font-size: 42px; margin-bottom: 8px; }
+    .pill {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.04);
+      color: rgba(255,255,255,.56);
+      font-size: 11px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+    }
+    .case-card ul, .features {
+      list-style: none;
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .case-card li, .features li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      color: rgba(255,255,255,.74);
+      line-height: 1.7;
+    }
+    .case-card li::before, .features li::before {
+      content: "•";
+      color: var(--red);
+      font-size: 22px;
+      line-height: 1;
+    }
+
+    .price-card.featured {
+      border-color: rgba(255,32,32,0.28);
+      background: linear-gradient(180deg, rgba(255,32,32,0.15), rgba(255,255,255,0.05));
+      box-shadow: var(--shadow-red);
+    }
+    .price-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .badge, .popular {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      letter-spacing: .20em;
+      text-transform: uppercase;
+    }
+    .badge {
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.22);
+      color: rgba(255,255,255,.60);
+      margin-top: 10px;
+    }
+    .popular {
+      background: #fff;
+      color: #000;
+      font-weight: 800;
+    }
+    .price-value { font-size: 48px; font-weight: 900; margin-bottom: 10px; }
+    .small-muted { color: rgba(255,255,255,.58); font-size: 14px; }
+
+    .marquee-wrap {
+      overflow: hidden;
+      border-radius: 34px;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.10);
+      backdrop-filter: blur(16px);
+      padding: 22px;
+    }
+    .marquee {
+      display: flex;
+      gap: 22px;
+      width: max-content;
+      animation: marquee 24s linear infinite;
+    }
+    .testimonial {
+      width: 360px;
+      padding: 28px;
+      border-radius: 28px;
+      background: rgba(0,0,0,.24);
+      border: 1px solid rgba(255,255,255,.10);
+      flex-shrink: 0;
+    }
+    .testimonial p { color: rgba(255,255,255,.76); line-height: 1.92; margin-bottom: 20px; }
+    .testimonial h4 { margin-bottom: 6px; }
+    .testimonial span { color: rgba(255,255,255,.50); font-size: 14px; }
+
+    .faq-list { display: grid; gap: 16px; }
+    .faq-item {
+      border-radius: 26px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.05);
+      backdrop-filter: blur(16px);
+      overflow: hidden;
+    }
+    .faq-q {
+      width: 100%;
+      background: transparent;
+      color: white;
+      border: 0;
+      padding: 24px 26px;
+      text-align: left;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .faq-q span:last-child { color: rgba(255,255,255,.58); transition: transform .25s ease; }
+    .faq-item.active .faq-q span:last-child { transform: rotate(180deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease; }
+    .faq-a p { padding: 0 26px 24px; color: rgba(255,255,255,.66); line-height: 1.82; }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: .92fr 1.08fr;
+      gap: 24px;
+    }
+    .contact-title {
+      font-size: clamp(30px, 4vw, 46px);
+      line-height: 1.04;
+      margin: 18px 0 16px;
+    }
+    .contact-copy { color: rgba(255,255,255,.66); line-height: 1.85; }
+    .contact-info {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+    .info {
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(0,0,0,.22);
+      border: 1px solid rgba(255,255,255,.10);
+      color: rgba(255,255,255,.76);
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+    .full { grid-column: 1 / -1; }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: rgba(255,255,255,.60);
+      font-size: 14px;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 15px 16px;
+      border-radius: 18px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.22);
+      color: white;
+      font-family: inherit;
+      outline: none;
+      transition: border-color .25s ease, box-shadow .25s ease;
+    }
+    textarea { min-height: 160px; resize: vertical; border-radius: 24px; }
+    input:focus, textarea:focus {
+      border-color: rgba(255,32,32,.42);
+      box-shadow: 0 0 0 4px rgba(255,32,32,.08);
+    }
+
+    .ultra-footer {
+      position: relative;
+      background: linear-gradient(180deg, #010101, #050507);
+      padding: 86px 0 30px;
+      overflow: hidden;
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+    .footer-glow-line {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, #ff2020, #ffffff, #ff2020, transparent);
+      background-size: 200% 100%;
+      animation: glowLine 4s linear infinite;
+    }
+    .footer-left p {
+      color: rgba(255,255,255,.60);
+      margin: 20px 0;
+      line-height: 1.8;
+      max-width: 520px;
+    }
+    .footer-logo {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+    .logo-box {
+      width: 56px;
+      height: 56px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, #ff2020, #ffffff);
+      display: grid;
+      place-items: center;
+      font-size: 20px;
+      color: black;
+      box-shadow: 0 0 30px rgba(255,32,32,0.4);
+      font-weight: 800;
+    }
+    .footer-logo h3 { font-size: 20px; margin-bottom: 4px; }
+    .footer-logo span { color: rgba(255,255,255,.55); font-size: 14px; }
+    .footer-col h4 { margin-bottom: 20px; }
+    .footer-col ul { list-style: none; }
+    .footer-col li { margin-bottom: 12px; color: rgba(255,255,255,.6); transition: .3s; }
+    .footer-col li:hover { color: #ff2020; transform: translateX(5px); }
+    .footer-col a { color: inherit; text-decoration: none; }
+    .socials { display: flex; gap: 12px; }
+    .socials a {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: .3s;
+      color: white;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.08);
+    }
+    .socials a:hover { background: #ff2020; transform: translateY(-3px); }
+    .footer-bottom {
+      margin-top: 50px;
+      padding-top: 22px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      color: rgba(255,255,255,.5);
+      gap: 14px;
+    }
+
+    @media (max-width: 1180px) {
+      .hero-grid, .contact-grid, .grid-4, .grid-3, .grid-2, .industry-grid, .process-grid, .guarantee-grid, .logo-strip, .offer-grid, .footer-grid {
+        grid-template-columns: 1fr 1fr;
       }
+      .hero-grid { grid-template-columns: 1fr; }
+      .hero-side { min-height: 460px; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .comparison-grid { grid-template-columns: 1fr; }
+    }
 
-      .nav-links.active{display:flex}
-      .nav-cta{display:none}
-      .grid-3,.grid-4,.footer-grid,.case-metrics,.mini-metrics{grid-template-columns:1fr}
-
-      .hero-actions{
-        flex-direction:column;
-        align-items:stretch;
-        max-width:340px;
-        margin:0 auto 40px;
+    @media (max-width: 760px) {
+      .nav-links { display: none; }
+      .hero-card, .card, .case-card, .price-card, .panel, .process-card, .industry-card, .comparison-card, .guarantee-card { padding: 22px; }
+      .stats, .grid-4, .grid-3, .grid-2, .industry-grid, .process-grid, .guarantee-grid, .logo-strip, .offer-grid, form, .footer-grid {
+        grid-template-columns: 1fr;
       }
-
-      .hero-actions .btn{width:100%}
-      .section{padding:78px 0}
-      .floating-whatsapp span{display:none}
-      .floating-whatsapp{width:58px;padding:0;justify-content:center;bottom:96px}
-
-      .brand{
-        font-size:1rem;
-        gap:10px;
-      }
-
-      .brand-logo{
-        width:56px;
-        height:56px;
-        border-radius:16px;
-      }
-
-      .brand-logo svg{
-        width:28px;
-        height:28px;
-      }
-
-      .logo-text{
-        font-size:.95rem;
-      }
-
-      .logo-sub{
-        font-size:.62rem;
-        letter-spacing:.16em;
-      }
-
-      .sticky-cta-inner{
-        flex-direction:column;
-        align-items:stretch;
-      }
-
-      .sticky-actions{
-        display:grid;
-        grid-template-columns:1fr 1fr;
-      }
-
-      .sticky-actions .btn{
-        width:100%;
-        min-height:50px;
-        padding:0 16px;
-      }
-
-      .footer{
-        margin-bottom:120px;
-      }
+      .hero-actions { flex-direction: column; }
+      .btn { width: 100%; }
+      .section { padding: 84px 0; }
+      .hero-side { min-height: 380px; }
+      .sg-1 { top: 30px; }
+      .sg-2 { top: 130px; }
+      .sg-3 { left: 20px; bottom: 40px; }
+      .testimonial { width: 300px; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
 <body>
-  <div class="bg-orb orb-1"></div>
-  <div class="bg-orb orb-2"></div>
-  <div class="bg-orb orb-3"></div>
-
-  <header class="navbar">
-    <div class="container nav-wrap">
-      <a href="#home" class="brand">
-        <div class="brand-logo">
-          <img src="logo.jpg.jpeg" alt="Apex Growth Ads Logo" style="width:100%; height:100%; object-fit:contain;">
-        </div>
-        <div class="brand-copy">
-          <span class="logo-text">Apex Growth Ads</span>
-          <span class="logo-sub">Scalable Revenue Systems</span>
-        </div>
-      </a>
-
-      <nav class="nav-links" id="navLinks">
-        <a href="#services">Services</a>
-        <a href="#results">Results</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#testimonials">Testimonials</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <a href="#contact" class="btn btn-primary nav-cta">Get Started</a>
-      <button class="menu-btn" id="menuBtn">☰</button>
+  <div class="loader" id="loader">
+    <div class="loader-box">
+      <div class="loader-ring"></div>
+      <p>Apex Growth Ads</p>
+      <p>Loading ultimate 3D experience</p>
     </div>
-  </header>
+  </div>
 
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="badge reveal"><i class="fa-solid fa-bolt"></i> India's Premium Performance Marketing for Serious Businesses</div>
+  <canvas id="webgl-canvas"></canvas>
+  <div class="noise"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
+  <div class="progress" id="progress"></div>
 
-      <h1 class="reveal">
-        Scale Your Business with
-        <span>Apex Growth Ads</span>
-      </h1>
+  <div class="wrap">
+    <header>
+      <div class="container nav">
+        <a href="#top" class="brand" style="display:flex; align-items:center; gap:12px;">
 
-      <p class="reveal">
-        Apex Growth Ads helps ambitious brands grow through high-converting Meta Ads, Google Ads, premium creative systems, conversion-focused funnels, and performance strategies designed for measurable scale.
-      </p>
+            <!-- LOGO BOX -->
+            <div style="
+              padding:6px;
+              border-radius:10px;
+              border:1px solid rgba(255,255,255,0.08);
+              background: rgba(255,255,255,0.02);
+            ">
+              <img src="logo.jpg" width="48" style="border-radius:6px;">
+            </div>
+          
+            <!-- TEXT -->
+            <div>
+              <strong style="
+                font-size:15px;
+                letter-spacing:1.5px;
+                color:white;
+              ">
+                APEX GROWTH ADS
+              </strong>
+              <br>
+          
+              <span style="
+                font-size:11px;
+                color:#9ca3af;
+                letter-spacing:1px;
+              ">
+                SCALING BRANDS TO PEAK PERFORMANCE
+              </span>
+            </div>
+          
+          </a>
 
-      <div class="hero-actions reveal">
-        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Free Consultation</a>
-        <a href="#results" class="btn btn-secondary"><i class="fa-solid fa-chart-line"></i> View Results</a>
+        <nav class="nav-links">
+          <a href="#services">Services</a>
+          <a href="#results">Results</a>
+          <a href="#industries">Industries</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn primary magnetic">Let’s Talk</a>
       </div>
+    </header>
 
-      <div class="hero-panel glass reveal">
+    <main id="top">
+      <section class="hero container">
         <div class="hero-grid">
-          <div class="hero-showcase glass">
-            <div class="hero-kicker">Strategic Growth Engine</div>
-            <h3>Built to Attract Better Leads, Close Faster, and Scale Profitably</h3>
-            <p>
-              We combine ad strategy, premium creative direction, audience intelligence, funnel optimization, and reporting clarity to build campaigns that feel premium and perform at a serious level.
-            </p>
-
-            <div class="mini-metrics">
-              <div class="mini-metric">
-                <strong>3x</strong>
-                <span>Average ROAS</span>
+          <div class="reveal">
+            <div class="eyebrow">India’s Premium Performance Marketing Agency</div>
+            <div class="hero-card tilt-card">
+              <h1>Scale Your Business with <span class="grad"> Apex Growth Ads</span></h1>
+              <p class="hero-copy">
+                Apex Growth Ads is a Hyderabad-based premium performance marketing agency focused on Meta Ads, Google Ads, lead generation funnels, creative strategy, retargeting, and conversion-focused growth systems. We do not just launch campaigns. We build full-funnel acquisition engines designed to turn ad spend into qualified leads, booked calls, site visits, and measurable business growth.
+              </p>
+              <div class="hero-actions">
+                <a href="#contact" class="btn primary magnetic">Book Free Consultation</a>
+                <a href="https://wa.me/918886969220" target="_blank" rel="noopener noreferrer" class="btn magnetic">Chat on WhatsApp</a>
               </div>
-              <div class="mini-metric">
-                <strong>200+</strong>
-                <span>Leads / Month</span>
-              </div>
-              <div class="mini-metric">
-                <strong>₹2Cr+</strong>
-                <span>Ad Spend Managed</span>
+              <div class="stats">
+                <div class="stat tilt-card"><h3>3x</h3><p>Average ROAS</p></div>
+                <div class="stat tilt-card"><h3>227+</h3><p>Leads / Month</p></div>
+                <div class="stat tilt-card"><h3>₹2Cr+</h3><p>Ad Spend Managed</p></div>
               </div>
             </div>
           </div>
 
-          <div class="hero-side">
-            <div class="lux-card glass">
-              <h4><i class="fa-solid fa-wand-magic-sparkles gold-text"></i> Creative + Conversion</h4>
-              <p>Every campaign is designed to look premium, communicate value, and convert with clarity.</p>
-            </div>
-            <div class="lux-card glass">
-              <h4><i class="fa-solid fa-bullseye gold-text"></i> Audience Precision</h4>
-              <p>We build targeting systems that reduce wasted spend and improve lead quality.</p>
-            </div>
-            <div class="lux-card glass">
-              <h4><i class="fa-solid fa-crown gold-text"></i> Luxury Brand Feel</h4>
-              <p>Your business should not look ordinary. We position your brand to feel high-trust and high-value.</p>
-            </div>
+          <div class="hero-side reveal">
+            <div class="side-glass sg-1 tilt-card"><h4>3x</h4><span>Average ROAS</span></div>
+            <div class="side-glass sg-2 tilt-card"><h4>227+</h4><span>Leads / Month</span></div>
+            <div class="side-glass sg-3 tilt-card"><h4>₹2Cr+</h4><span>Ad Spend Managed</span></div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="logo-strip-wrap reveal">
+      <section class="section container reveal">
+        <div class="section-head center">
+          <div class="eyebrow">Market Position</div>
+          <h2>Built to look like authority. Built to perform like a machine.</h2>
+          <p>From luxury real estate projects to local service businesses and startup growth campaigns, Apex Growth Ads is engineered for brands that want premium positioning, stronger lead quality, and disciplined performance management.</p>
+        </div>
         <div class="logo-strip">
-          <div class="logo-item"><i class="fa-solid fa-store"></i> E-Commerce</div>
-          <div class="logo-item"><i class="fa-solid fa-building"></i> Real Estate</div>
-          <div class="logo-item"><i class="fa-solid fa-graduation-cap"></i> Education</div>
-          <div class="logo-item"><i class="fa-solid fa-hospital"></i> Clinics</div>
-          <div class="logo-item"><i class="fa-solid fa-cart-shopping"></i> D2C Brands</div>
-          <div class="logo-item"><i class="fa-solid fa-briefcase"></i> Local Business</div>
-
-          <div class="logo-item"><i class="fa-solid fa-store"></i> E-Commerce</div>
-          <div class="logo-item"><i class="fa-solid fa-building"></i> Real Estate</div>
-          <div class="logo-item"><i class="fa-solid fa-graduation-cap"></i> Education</div>
-          <div class="logo-item"><i class="fa-solid fa-hospital"></i> Clinics</div>
-          <div class="logo-item"><i class="fa-solid fa-cart-shopping"></i> D2C Brands</div>
-          <div class="logo-item"><i class="fa-solid fa-briefcase"></i> Local Business</div>
+          <div class="logo-pill tilt-card">Meta Ads</div>
+          <div class="logo-pill tilt-card">Google Ads</div>
+          <div class="logo-pill tilt-card">Lead Funnels</div>
+          <div class="logo-pill tilt-card">Retargeting</div>
+          <div class="logo-pill tilt-card">Creative Systems</div>
         </div>
-      </div>
+      </section>
 
-      <div class="grid-3" style="margin-top:24px;">
-        <div class="stat-card glass reveal">
-          <div class="icon-circle"><i class="fa-solid fa-arrow-trend-up"></i></div>
-          <h3>3x Average ROAS</h3>
-          <p>Campaign systems structured for better returns, stronger optimization, and profitable scale.</p>
+      <section class="section container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Why Apex</div>
+          <h2>We don’t run ads. We build revenue machines.</h2>
+          <p>Apex Growth Ads combines luxury presentation, aggressive performance systems, and real visual authority to help serious brands scale faster. We work at the intersection of strategy, conversion psychology, audience targeting, and premium creative execution.</p>
         </div>
 
-        <div class="stat-card glass reveal">
-          <div class="icon-circle"><i class="fa-solid fa-users"></i></div>
-          <h3>200+ Leads / Month</h3>
-          <p>Reliable lead generation for real estate, local businesses, education brands, and e-commerce.</p>
+        <div class="grid-4">
+          <div class="card tilt-card reveal"><div class="icon">◎</div><h3>Revenue-first strategy</h3><p>Every campaign is engineered for measurable business growth, not vanity metrics, low-quality traffic, or empty dashboards.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">◈</div><h3>Full-funnel systems</h3><p>Creative, offers, landing pages, retargeting, lead handling, and follow-up work together as one acquisition engine.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">✦</div><h3>Elite execution</h3><p>Premium positioning, disciplined optimization, faster testing cycles, and a sharper conversion mindset at every stage.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">⬢</div><h3>Fast decision loops</h3><p>Sharper iteration, creative refresh, budget steering, and conversion improvements focused on profitable scale.</p></div>
+        </div>
+      </section>
+
+      <section class="section container" id="services">
+        <div class="section-head reveal">
+          <div class="eyebrow">Services</div>
+          <h2>Premium ad systems designed for serious growth.</h2>
+          <p>Our service stack is designed to help businesses go beyond simple campaign management. We architect the complete journey from attention to action to follow-up to conversion.</p>
         </div>
 
-        <div class="stat-card glass reveal">
-          <div class="icon-circle"><i class="fa-solid fa-star"></i></div>
-          <h3>50+ Happy Clients</h3>
-          <p>Trusted by businesses that want premium execution, stronger systems, and measurable growth.</p>
+        <div class="grid-3">
+          <div class="card tilt-card reveal"><div class="icon">f</div><h3>Meta Ads Management</h3><p>Lead generation and conversion campaigns for Facebook and Instagram with premium creative systems, structured audience segmentation, and ROI-focused optimization.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">Ⓖ</div><h3>Google Ads Campaigns</h3><p>High-intent traffic systems across Search, Display, and YouTube for businesses that want leads from people already looking to buy.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">⌁</div><h3>Lead Generation Funnels</h3><p>Landing pages, offer architecture, lead qualification, and retargeting systems built to convert faster and reduce friction.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">✎</div><h3>Creative Strategy & Design</h3><p>Visual systems, creative hooks, ad scripts, copy frameworks, and premium messaging engineered for attention and trust.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">↻</div><h3>Retargeting Campaigns</h3><p>Recover warm buyers, re-engage high-intent audiences, and move undecided users deeper into your conversion journey.</p></div>
+          <div class="card tilt-card reveal"><div class="icon">▣</div><h3>E-commerce & Real Estate Ads</h3><p>Custom acquisition systems for property brands, developers, local businesses, service companies, and online stores.</p></div>
         </div>
-      </div>
-    </div>
-  </section>
+      </section>
 
-  <section class="section" id="about">
-    <div class="container">
-      <h2 class="section-title reveal">Performance Marketing That <span>Drives Real Results</span></h2>
-      <p class="section-subtitle reveal">
-        At Apex Growth Ads, we do not just launch ads. We build complete performance ecosystems that turn attention into inquiries, inquiries into qualified leads, and leads into scalable revenue.
-      </p>
-
-      <div class="grid-2">
-        <div class="feature-card glass reveal">
-          <h3>Our Mission</h3>
-          <p>
-            To help brands scale with better ad strategy, stronger conversion systems, more premium positioning, and data-driven optimization that transforms marketing spend into real business growth.
-          </p>
+      <section class="section container reveal">
+        <div class="section-head center">
+          <div class="eyebrow">Core Offers</div>
+          <h2>What clients actually get when they work with Apex.</h2>
+          <p>This is not just campaign setup. This is positioning, audience strategy, creative intelligence, conversion flow, follow-up logic, and performance clarity.</p>
         </div>
-
-        <div class="feature-card glass reveal">
-          <h3>Why Choose Us</h3>
-          <p>
-            Founder-led by Vishnu Vardhan, At Apex Growth Ads, we don’t just run campaigns — we build scalable growth systems that deliver consistent, measurable results. Our approach combines strategic thinking, high-impact creative execution, and data-driven precision to help brands scale with confidence.
-          </p>
-        </div>
-      </div>
-
-      <div class="grid-3" style="margin-top:26px">
-        <div class="trust-metric reveal">
-          <div class="icon-circle"><i class="fa-solid fa-award"></i></div>
-          <h4>5+</h4>
-          <p>Years Experience</p>
-        </div>
-
-        <div class="trust-metric reveal">
-          <div class="icon-circle"><i class="fa-solid fa-user-group"></i></div>
-          <h4>50+</h4>
-          <p>Active Clients</p>
-        </div>
-
-        <div class="trust-metric reveal">
-          <div class="icon-circle"><i class="fa-solid fa-indian-rupee-sign"></i></div>
-          <h4>₹2Cr+</h4>
-          <p>Ad Spend Managed</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="services">
-    <div class="container">
-      <h2 class="section-title reveal">Our <span>Services</span></h2>
-      <p class="section-subtitle reveal">
-        Premium performance marketing services tailored for businesses that want stronger positioning, better leads, and serious growth.
-      </p>
-
-      <div class="grid-3">
-        <div class="service-card glass reveal">
-          <div class="icon-box"><i class="fa-brands fa-meta"></i></div>
-          <h3>Meta Ads Management</h3>
-          <p>Facebook and Instagram ad systems engineered to generate qualified leads, stronger engagement, and scalable growth.</p>
-          <ul>
-            <li>Campaign Strategy</li>
-            <li>Audience Targeting</li>
-            <li>Creative Testing</li>
-            <li>Daily Optimization</li>
-          </ul>
-        </div>
-
-        <div class="service-card glass reveal">
-          <div class="icon-box"><i class="fa-brands fa-google"></i></div>
-          <h3>Google Ads Campaigns</h3>
-          <p>Intent-driven campaigns designed to capture demand, improve conversions, and increase high-quality traffic.</p>
-          <ul>
-            <li>Keyword Research</li>
-            <li>Ad Copywriting</li>
-            <li>Bid Management</li>
-            <li>Conversion Tracking</li>
-          </ul>
-        </div>
-
-        <div class="service-card glass reveal">
-          <div class="icon-box"><i class="fa-solid fa-filter-circle-dollar"></i></div>
-          <h3>Lead Generation Funnels</h3>
-          <p>Complete lead systems that capture, qualify, and nurture prospects with a more premium brand experience.</p>
-          <ul>
-            <li>Landing Pages</li>
-            <li>Lead Magnets</li>
-            <li>Email Automation</li>
-            <li>CRM Integration</li>
-          </ul>
-        </div>
-
-        <div class="service-card glass reveal">
-          <div class="icon-box"><i class="fa-solid fa-pen-ruler"></i></div>
-          <h3>Creative Strategy & Design</h3>
-          <p>Luxury-style creative systems that combine messaging, visuals, and conversion psychology for stronger results.</p>
-          <ul>
-            <li>Ad Creatives</li>
-            <li>Copywriting</li>
-            <li>Video Ads</li>
-            <li>A/B Testing</li>
-          </ul>
-        </div>
-
-        <div class="service-card glass reveal">
-          <div class="icon-box"><i class="fa-solid fa-rotate"></i></div>
-          <h3>Retargeting Campaigns</h3>
-          <p>Retargeting flows designed to recover lost traffic, increase ROAS, and improve final purchase intent.</p>
-          <ul>
-            <li>Pixel Setup</li>
-            <li>Dynamic Ads</li>
-            <li>Audience Segmentation</li>
-            <li>Retargeting Optimization</li>
-          </ul>
-        </div>
-
-        <div class="service-card glass reveal">
-          <div class="icon-box"><i class="fa-solid fa-bag-shopping"></i></div>
-          <h3>E-commerce & Real Estate Ads</h3>
-          <p>Industry-specific campaign structures for product sales, property leads, and high-value customer acquisition.</p>
-          <ul>
-            <li>Product Catalogs</li>
-            <li>ROI Tracking</li>
-            <li>Sales Optimization</li>
-            <li>Scaling Strategy</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="results">
-    <div class="container">
-      <h2 class="section-title reveal">Proven Results That <span>Speak for Themselves</span></h2>
-      <p class="section-subtitle reveal">
-        Real business transformations powered by stronger strategy, premium execution, and performance-driven systems.
-      </p>
-
-      <div class="case-stack">
-        <div class="case-card glass reveal">
-          <div class="case-left">
-            <div class="icon-box"><i class="fa-solid fa-cart-shopping"></i></div>
-            <h3>E-commerce Brand</h3>
-            <div class="case-label">Challenge</div>
-            <p>Low ROAS and weak conversion efficiency.</p>
-            <div class="case-label">Solution</div>
-            <p>Dynamic product ads, stronger creative testing, and improved audience segmentation.</p>
-          </div>
-
-          <div class="case-metrics">
-            <div class="metric-card">
-              <h4>ROAS</h4>
-              <div class="metric-small">Before</div>
-              <div class="before">1.8x</div>
-              <div class="arrow">↗</div>
-              <div class="metric-small">After</div>
-              <div class="after">4.2x</div>
-            </div>
-
-            <div class="metric-card">
-              <h4>Cost Per Purchase</h4>
-              <div class="metric-small">Before</div>
-              <div class="before">₹850</div>
-              <div class="arrow">↗</div>
-              <div class="metric-small">After</div>
-              <div class="after">₹320</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="case-card glass reveal">
-          <div class="case-left">
-            <div class="icon-box"><i class="fa-solid fa-building"></i></div>
-            <h3>Real Estate Developer</h3>
-            <div class="case-label">Challenge</div>
-            <p>High CPL and low-quality lead flow.</p>
-            <div class="case-label">Solution</div>
-            <p>Targeted campaigns with better qualification funnels and more focused audience layers.</p>
-          </div>
-
-          <div class="case-metrics">
-            <div class="metric-card">
-              <h4>Leads Per Month</h4>
-              <div class="metric-small">Before</div>
-              <div class="before">45</div>
-              <div class="arrow">↗</div>
-              <div class="metric-small">After</div>
-              <div class="after">230</div>
-            </div>
-
-            <div class="metric-card">
-              <h4>Cost Per Lead</h4>
-              <div class="metric-small">Before</div>
-              <div class="before">₹1200</div>
-              <div class="arrow">↗</div>
-              <div class="metric-small">After</div>
-              <div class="after">₹450</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="case-card glass reveal">
-          <div class="case-left">
-            <div class="icon-box"><i class="fa-solid fa-graduation-cap"></i></div>
-            <h3>Education Business</h3>
-            <div class="case-label">Challenge</div>
-            <p>Struggling to scale profitably.</p>
-            <div class="case-label">Solution</div>
-            <p>Full-funnel webinar automation, retargeting systems, and stronger conversion optimization.</p>
-          </div>
-
-          <div class="case-metrics">
-            <div class="metric-card">
-              <h4>Students Per Month</h4>
-              <div class="metric-small">Before</div>
-              <div class="before">80</div>
-              <div class="arrow">↗</div>
-              <div class="metric-small">After</div>
-              <div class="after">340</div>
-            </div>
-
-            <div class="metric-card">
-              <h4>CPA</h4>
-              <div class="metric-small">Before</div>
-              <div class="before">₹2500</div>
-              <div class="arrow">↗</div>
-              <div class="metric-small">After</div>
-              <div class="after">₹950</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="enterprise-cta reveal" style="margin-top:34px">
-        <h3>Ready to See Similar Results for Your Business?</h3>
-        <p>Let’s build a premium growth system tailored to your market, offer, and business goals.</p>
-        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-rocket"></i> Start Your Growth Journey</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="pricing">
-    <div class="container">
-      <h2 class="section-title reveal">Transparent Pricing <span>That Scales With You</span></h2>
-      <p class="section-subtitle reveal">
-        Choose the level of growth support that fits your business. All packages include optimization, tracking, and strategic guidance.
-      </p>
-
-      <div class="grid-3">
-        <div class="pricing-card glass reveal">
-          <h3>Starter</h3>
-          <div class="pricing-desc">Perfect for businesses launching paid ads with structured support.</div>
-          <div class="price">₹15,000 <small>/ 7-days</small></div>
-          <p class="tax-note">Inclusive of GST</p>
-          <ul>
-            <li>Meta Ads (Facebook & Instagram)</li>
-            <li>Up to ₹50K monthly ad spend</li>
-            <li>Campaign setup & basic optimization</li>
-            <li>Weekly performance reports</li>
-            <li>Email support</li>
-            <li>2 ad creatives per month</li>
-            <li>Estimated Impressions: 27.4K – 50.9K</li>
-            <li>Estimated Link Clicks: 550</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary">Get Started</a>
-        </div>
-
-        <div class="pricing-card glass popular reveal">
-          <div class="pricing-badge">⚡ MOST POPULAR</div>
-          <h3>Growth</h3>
-          <div class="pricing-desc">Ideal for scaling brands that need stronger performance and better systems.</div>
-          <div class="price">₹20,000 <small>/ 7-days</small></div>
-          <p class="tax-note">Inclusive of GST</p>
-          <ul>
-            <li>Meta & Google Ads</li>
-            <li>Up to ₹2L monthly ad spend</li>
-            <li>Advanced targeting & optimization</li>
-            <li>Bi-weekly strategy calls</li>
-            <li>7-day optimization cycle</li>
-            <li>4 ad creatives per month</li>
-            <li>Landing page optimization</li>
-            <li>Conversion tracking setup</li>
-            <li>WhatsApp support</li>
-            <li>Estimated Impressions: 40.55K – 75.3K</li>
-            <li>Estimated Link Clicks: 750</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Most Popular</a>
-        </div>
-
-        <div class="pricing-card glass reveal">
-          <h3>Premium</h3>
-          <div class="pricing-desc">For serious growth-focused businesses that want full-funnel execution.</div>
-          <div class="price">₹25,000 <small>/ 7-days</small></div>
-          <p class="tax-note">Inclusive of GST</p>
-          <ul>
-            <li>Multi-platform campaigns</li>
-            <li>Unlimited ad spend management</li>
-            <li>Full-funnel strategy & execution</li>
-            <li>Weekly strategy calls</li>
-            <li>Priority support</li>
-            <li>Custom ad creatives</li>
-            <li>Custom landing pages</li>
-            <li>CRM & automation setup</li>
-            <li>Detailed analytics dashboard</li>
-            <li>Competitor analysis</li>
-            <li>WhatsApp support</li>
-            <li>Estimated Impressions: 53.4K – 99.2K</li>
-            <li>Estimated Link Clicks: 950</li>
-          </ul>
-          <a href="#contact" class="btn btn-secondary">Get Premium</a>
-        </div>
-      </div>
-
-      <div class="enterprise-cta reveal">
-        <h3>Need a Custom Plan?</h3>
-        <p>For high budgets, niche offers, or premium lead generation requirements, we can build a tailored solution.</p>
-        <a href="#contact" class="btn btn-primary">Contact for Enterprise Pricing</a>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="testimonials">
-    <div class="container">
-      <h2 class="trust-heading reveal">Trusted by Growing <span>Businesses Across India</span></h2>
-      <p class="section-subtitle reveal">
-        Businesses choose Apex Growth Ads for premium strategy, better clarity, and stronger performance.
-      </p>
-
-      <div class="grid-3">
-        <div class="testimonial-card glass reveal">
-          <div class="quote-mark">❞</div>
-          <div class="stars">★★★★★</div>
-          <p>
-            Apex Growth Ads transformed our lead generation completely. We went from 30–40 leads per month to consistently getting 200+ qualified inquiries. The ROI has been exceptional.
-          </p>
-          <div class="testimonial-footer">
-            <div>
-              <strong>Rajesh Sharma</strong>
-              <span>Founder, Urban Living Homes</span>
-            </div>
-            <span class="tag">Real Estate</span>
-          </div>
-          <div class="result-badge">5x increase in leads</div>
-        </div>
-
-        <div class="testimonial-card glass reveal">
-          <div class="quote-mark">❞</div>
-          <div class="stars">★★★★★</div>
-          <p>
-            Working with Vishnu and his team has been a game-changer. Our ROAS improved from 1.9x to 4.5x within 3 months. Their creative strategy is excellent.
-          </p>
-          <div class="testimonial-footer">
-            <div>
-              <strong>Priya</strong>
-              <span>CEO, StyleHub Fashion</span>
-            </div>
-            <span class="tag">E-commerce</span>
-          </div>
-          <div class="result-badge">4.5x ROAS achieved</div>
-        </div>
-
-        <div class="testimonial-card glass reveal">
-          <div class="quote-mark">❞</div>
-          <div class="stars">★★★★★</div>
-          <p>
-            The team understands performance marketing deeply. They built funnels and scaled our acquisition profitably. Highly recommended for serious businesses.
-          </p>
-          <div class="testimonial-footer">
-            <div>
-              <strong>Anil Kumar</strong>
-              <span>Director, SkillUp Academy</span>
-            </div>
-            <span class="tag">Education</span>
-          </div>
-          <div class="result-badge">340% growth</div>
-        </div>
-
-        <div class="testimonial-card glass reveal">
-          <div class="quote-mark">❞</div>
-          <div class="stars">★★★★★</div>
-          <p>
-            Professional, data-driven, and results-focused. Apex Growth Ads helped us scale from ₹3L to ₹12L monthly revenue while maintaining profitability.
-          </p>
-          <div class="testimonial-footer">
-            <div>
-              <strong>Neha Gupta</strong>
-              <span>Marketing Head, TechGear Store</span>
-            </div>
-            <span class="tag">E-commerce</span>
-          </div>
-          <div class="result-badge">₹12L monthly revenue</div>
-        </div>
-
-        <div class="testimonial-card glass reveal">
-          <div class="quote-mark">❞</div>
-          <div class="stars">★★★★★</div>
-          <p>
-            Finally found an agency that actually delivers. Cost per lead dropped by 65% and lead quality improved significantly. The reporting is transparent and detailed.
-          </p>
-          <div class="testimonial-footer">
-            <div>
-              <strong>Karthik Reddy</strong>
-              <span>Owner, Elite Properties</span>
-            </div>
-            <span class="tag">Real Estate</span>
-          </div>
-          <div class="result-badge">65% reduction in CPL</div>
-        </div>
-
-        <div class="testimonial-card glass reveal">
-          <div class="quote-mark">❞</div>
-          <div class="stars">★★★★★</div>
-          <p>
-            The premium look and clarity of their campaigns changed how customers responded to our brand. Better positioning, better leads, better results.
-          </p>
-          <div class="testimonial-footer">
-            <div>
-              <strong>Sneha Verma</strong>
-              <span>Founder, Luxe Interiors</span>
-            </div>
-            <span class="tag">Brand Growth</span>
-          </div>
-          <div class="result-badge">Higher lead quality</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="faq">
-    <div class="container">
-      <h2 class="section-title reveal">Frequently Asked <span>Questions</span></h2>
-      <p class="section-subtitle reveal">
-        Clear answers for business owners who want to understand how we work and what to expect.
-      </p>
-
-      <div class="faq-wrap">
-        <div class="faq-item glass reveal active">
-          <button class="faq-question">
-            <span>Do you manage both Meta Ads and Google Ads?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            Yes. Depending on your business model, audience, and goals, we can manage Meta Ads, Google Ads, or a combined strategy for better reach and stronger conversion opportunities.
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-question">
-            <span>Do your packages include GST and taxes?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            Yes. The pricing shown on this website is inclusive of GST and applicable taxes, so you get clear and transparent package pricing.
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-question">
-            <span>How soon can I expect results?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            Timelines depend on your offer, budget, competition, creative quality, and landing page strength. Many campaigns begin showing useful performance signals within the first few days, with stronger optimization happening over time.
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-question">
-            <span>Will I know how much ad spend is being used?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            Yes. We believe in transparent reporting. You will know your ad spend, campaign performance, lead volume, and other important metrics relevant to your package and campaign goals.
-          </div>
-        </div>
-
-        <div class="faq-item glass reveal">
-          <button class="faq-question">
-            <span>Is this suitable for local businesses and real estate?</span>
-            <i class="fa-solid fa-chevron-down"></i>
-          </button>
-          <div class="faq-answer">
-            Absolutely. We work with local businesses, real estate, education, e-commerce, and other service-based industries that need better lead generation and stronger conversion performance.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="final-cta-title reveal">Ready to Scale <span>Your Business?</span></h2>
-      <p class="section-subtitle reveal">
-        Book your free strategy consultation and let’s build a high-converting system for your brand.
-      </p>
-
-      <div class="contact-grid">
-        <div class="contact-box glass reveal">
-          <div class="offer-card">
-            <h3>Get a Free Strategy Call Worth ₹5,000</h3>
-            <ul>
-              <li>Personalized growth strategy for your business</li>
-              <li>Analysis of your current ad performance</li>
-              <li>ROAS improvement recommendations</li>
-              <li>No obligations, only practical insights</li>
+        <div class="offer-grid">
+          <div class="panel tilt-card">
+            <h3>Growth Infrastructure</h3>
+            <ul class="bullet-list">
+              <li>Meta and Google campaign architecture</li>
+              <li>Audience research and segmentation</li>
+              <li>Lead-gen landing page direction</li>
+              <li>Retargeting structure across funnel stages</li>
+              <li>Offer refinement and message-market alignment</li>
             </ul>
           </div>
-
-          <div class="contact-info">
-            <div class="contact-row glass">
-              <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
-              <div>
-                <strong>Email Us</strong>
-                <a href="mailto:apexgrowthads@gmail.com">apexgrowthads@gmail.com</a>
-              </div>
-            </div>
-
-            <div class="contact-row glass">
-              <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
-              <div>
-                <strong>Call Us (Apex Growth Ads)</strong>
-                <a href="tel:+918886969220">+91 8886969220</a>
-              </div>
-            </div>
-
-            <div class="contact-row glass">
-              <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
-              <div>
-                <strong>Location</strong>
-                <p>Hyderabad, Telangana, India</p>
-              </div>
-            </div>
+          <div class="panel tilt-card">
+            <h3>Performance Systems</h3>
+            <ul class="bullet-list">
+              <li>Creative testing and ad fatigue prevention</li>
+              <li>Daily or weekly optimization logic</li>
+              <li>Cost-per-lead and ROAS monitoring</li>
+              <li>High-intent lead quality filtering</li>
+              <li>Weekly growth review and strategic direction</li>
+            </ul>
           </div>
+        </div>
+      </section>
 
-          <a href="https://wa.me/918886969220" target="_blank" class="btn btn-whatsapp"><i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp</a>
+      <section class="section container" id="results">
+        <div class="section-head reveal">
+          <div class="eyebrow">Results</div>
+          <h2>Metrics that move business, not just dashboards.</h2>
+          <p>Luxury presentation is good. Profitable performance is better. We build both together, because serious brands need authority and outcomes.</p>
         </div>
 
-        <div class="form-box glass reveal">
-          <form onsubmit="handleSubmit(event)">
-            <div class="field">
-              <label for="name">Full Name *</label>
-              <input id="name" type="text" placeholder="Your name" required />
-            </div>
-
-            <div class="field">
-              <label for="email">Email Address *</label>
-              <input id="email" type="email" placeholder="your@email.com" required />
-            </div>
-
-            <div class="field">
-              <label for="phone">Phone Number</label>
-              <input id="phone" type="tel" placeholder="+91 98765 43210" />
-            </div>
-
-            <div class="field">
-              <label for="company">Company Name</label>
-              <input id="company" type="text" placeholder="Your company" />
-            </div>
-
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" placeholder="Tell us about your business goals..."></textarea>
-            </div>
-
-            <button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Book Free Consultation</button>
-          </form>
+        <div class="grid-4" style="margin-bottom:22px;">
+          <div class="card kpi tilt-card reveal"><h3><span class="counter" data-target="186">0</span>%</h3><p>Lead Growth</p></div>
+          <div class="card kpi tilt-card reveal"><h3><span class="counter" data-target="38">0</span>%</h3><p>Cost Per Lead Reduction</p></div>
+          <div class="card kpi tilt-card reveal"><h3><span class="counter" data-target="4">0</span>x</h3><p>Return on Ad Spend</p></div>
+          <div class="card kpi tilt-card reveal"><h3><span class="counter" data-target="227">0</span>+</h3><p>Monthly Qualified Leads</p></div>
         </div>
-      </div>
-    </div>
-  </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-box">
-          <div class="footer-brand">
-            <div class="brand-logo" style="width:56px;height:56px;border-radius:16px;">
-              <svg viewBox="0 0 64 64" aria-hidden="true" style="width:28px;height:28px;">
-                <path d="M32 6 10 18v16c0 13.3 8.9 22.8 22 25 13.1-2.2 22-11.7 22-25V18L32 6Zm0 8.2 14 7.7v12c0 8.9-5.2 15.9-14 18-8.8-2.1-14-9.1-14-18v-12l14-7.7Zm0 8.8-9.3 18.5h6.8l2.5-5.2 2.6 5.2h6.8L32 23Z"/>
-              </svg>
-            </div>
-            <span>Apex Growth Ads</span>
+        <div class="grid-3">
+          <div class="case-card tilt-card reveal"><div class="pill">Case Study</div><h3>4.2x ROAS</h3><p>Luxury Real Estate Campaign</p><ul><li>38% lower CPL</li><li>217 qualified leads</li><li>Premium audience segmentation</li></ul></div>
+          <div class="case-card tilt-card reveal"><div class="pill">Case Study</div><h3>+186% Lead Growth</h3><p>Local Service Brand Scale-Up</p><ul><li>High-intent WhatsApp funnel</li><li>Creative refresh system</li><li>Retargeting conversion stack</li></ul></div>
+          <div class="case-card tilt-card reveal"><div class="pill">Case Study</div><h3>52% Lower CPA</h3><p>Startup Growth Acceleration</p><ul><li>Landing page optimization</li><li>A/B creative testing</li><li>Weekly growth reporting</li></ul></div>
+        </div>
+      </section>
+
+      <section class="section container" id="industries">
+        <div class="section-head reveal">
+          <div class="eyebrow">Industries</div>
+          <h2>Built for brands that need leads, trust, and stronger market positioning.</h2>
+          <p>Different industries have different sales cycles, lead quality issues, and creative needs. We adapt the system to the business model.</p>
+        </div>
+        <div class="industry-grid">
+          <div class="industry-card tilt-card reveal"><h3>Real Estate</h3><p>Project launches, site visits, inventory awareness, and lead quality systems for property marketing.</p></div>
+          <div class="industry-card tilt-card reveal"><h3>Local Services</h3><p>High-intent campaigns for clinics, agencies, consultants, education brands, and appointment-based services.</p></div>
+          <div class="industry-card tilt-card reveal"><h3>Startups</h3><p>Positioning, acquisition experiments, performance creative, and early-stage funnel design for scalable growth.</p></div>
+          <div class="industry-card tilt-card reveal"><h3>E-commerce</h3><p>Conversion-led traffic, creative testing, retargeting ladders, and scale strategies for product businesses.</p></div>
+        </div>
+      </section>
+
+      <section class="section container">
+        <div class="section-head reveal">
+          <div class="eyebrow">Process</div>
+          <h2>How Apex builds a growth engine.</h2>
+          <p>The strongest results come from systems, not random launches. Here is how we structure campaigns for profitable momentum.</p>
+        </div>
+        <div class="process-grid">
+          <div class="process-card tilt-card reveal"><div class="pill">01</div><h3>Audit</h3><p>We understand your offer, market, current performance, funnel friction, and growth gaps.</p></div>
+          <div class="process-card tilt-card reveal"><div class="pill">02</div><h3>Positioning</h3><p>We refine the message, audience angle, hooks, and conversion promise for stronger response.</p></div>
+          <div class="process-card tilt-card reveal"><div class="pill">03</div><h3>Launch</h3><p>We deploy campaigns, creative systems, retargeting logic, and landing page direction.</p></div>
+          <div class="process-card tilt-card reveal"><div class="pill">04</div><h3>Optimize</h3><p>We track lead quality, cost efficiency, creative fatigue, and conversion patterns.</p></div>
+          <div class="process-card tilt-card reveal"><div class="pill">05</div><h3>Scale</h3><p>We increase winners, fix weak links, and push toward more consistent business growth.</p></div>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-head center">
+          <div class="eyebrow">Apex vs Average</div>
+          <h2>Why serious businesses choose premium strategy over cheap execution.</h2>
+          <p>Cheap agencies talk about reach. Premium growth partners talk about revenue systems, quality leads, conversion flow, and scale.</p>
+        </div>
+        <div class="comparison-grid">
+          <div class="comparison-card tilt-card">
+            <h3>Typical Agency</h3>
+            <ul class="bullet-list">
+              <li>Generic ads and weak hooks</li>
+              <li>Little focus on lead quality</li>
+              <li>No funnel thinking</li>
+              <li>Slow optimization loops</li>
+              <li>Reports without strategic direction</li>
+            </ul>
           </div>
-          <p>
-            Apex Growth Ads is a premium performance marketing agency helping businesses scale through data-driven Meta Ads, Google Ads, and conversion-focused growth systems.
-          </p>
+          <div class="comparison-card tilt-card">
+            <h3>Apex Growth Ads</h3>
+            <ul class="bullet-list">
+              <li>Premium positioning and creative systems</li>
+              <li>Lead-gen and conversion flow thinking</li>
+              <li>Retargeting structure across touchpoints</li>
+              <li>Faster testing and sharper optimization</li>
+              <li>Growth direction focused on business outcomes</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
+      <section class="section container" id="pricing">
+        <div class="section-head center reveal">
+          <div class="eyebrow">Pricing</div>
+          <h2>Simple packages. Premium execution.</h2>
+          <p>Choose the right entry point, then scale with sharper systems and premium brand positioning. Inclusive of GST.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="price-card tilt-card reveal">
+            <div class="price-top">
+              <div>
+                <h3>Starter</h3>
+                <div class="badge">Launch Fast</div>
+              </div>
+            </div>
+            <div class="price-value">
+              ₹15,000 
+              <span style="
+                font-size:10px;
+                opacity:0.6;
+                margin-left:6px;
+                letter-spacing:1.5px;
+                text-transform:uppercase;
+              ">
+                / 7 days
+              </span>
+            </div>
+            <div class="small-muted">Inclusive of GST</div>
+            <ul class="features">
+              <li><strong>Meta Ads (Facebook & Instagram)</strong></li>
+              <li>Up to ₹50K monthly ad spend</li>
+              <li>Campaign setup & basic optimization</li>
+              <li>Weekly performance reports</li>
+              <li>Email support</li>
+              <li>2 ad creatives per month</li>
+              <li><strong>Estimated Impressions:</strong> 27.4K – 50.9K</li>
+              <li><strong>Estimated Link Clicks:</strong> 550</li>
+            </ul>
+            <a href="#contact" class="btn magnetic" style="width:100%;">Get Started</a>
+          </div>
+
+          <div class="price-card featured tilt-card reveal">
+            <div class="price-top">
+              <div>
+                <h3>Growth</h3>
+                <div class="badge">Most Popular</div>
+              </div>
+              <div class="popular">Popular</div>
+            </div>
+            <div class="price-value">
+              ₹20,000 
+              <span style="
+                font-size:10px;
+                opacity:0.6;
+                margin-left:6px;
+                letter-spacing:1.5px;
+                text-transform:uppercase;
+              ">
+                / 7 days
+              </span>
+            </div>
+            <div class="small-muted">Inclusive of GST</div>
+            <ul class="features">
+              <li><strong>Meta & Google Ads</strong></li>
+              <li>Up to ₹2L monthly ad spend</li>
+              <li>Advanced targeting & optimization</li>
+              <li>Bi-weekly strategy calls</li>
+              <li>7-day optimization cycle</li>
+              <li>4 ad creatives per month</li>
+              <li>Landing page optimization</li>
+              <li>Conversion tracking setup</li>
+              <li>WhatsApp support</li>
+              <li><strong>Estimated Impressions:</strong> 40.55K – 75.3K</li>
+              <li><strong>Estimated Link Clicks:</strong> 750</li>
+            </ul>
+            <a href="#contact" class="btn primary magnetic" style="width:100%;">Get Started</a>
+          </div>
+
+          <div class="price-card tilt-card reveal">
+            <div class="price-top">
+              <div>
+                <h3>Premium</h3>
+                <div class="badge">Elite Scale</div>
+              </div>
+            </div>
+            <div class="price-value">
+              ₹25,000 
+              <span style="
+                font-size:10px;
+                opacity:0.6;
+                margin-left:6px;
+                letter-spacing:1.5px;
+                text-transform:uppercase;
+              ">
+                / 7 days
+              </span>
+            </div>
+            <div class="small-muted">Inclusive of GST</div>
+            <ul class="features">
+              <li><strong>Multi-platform campaigns</strong></li>
+              <li>Unlimited ad spend management</li>
+              <li>Full-funnel strategy & execution</li>
+              <li>Weekly strategy calls</li>
+              <li>Priority support</li>
+              <li>Custom ad creatives</li>
+              <li>Custom landing pages</li>
+              <li>CRM & automation setup</li>
+              <li>Detailed analytics dashboard</li>
+              <li>Competitor analysis</li>
+              <li>WhatsApp support</li>
+              <li><strong>Estimated Impressions:</strong> 53.4K – 99.2K</li>
+              <li><strong>Estimated Link Clicks:</strong> 950</li>
+            </ul>
+            <a href="#contact" class="btn magnetic" style="width:100%;">Get Started</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container reveal">
+        <div class="section-head center">
+          <div class="eyebrow">Guarantee of Quality</div>
+          <h2>What you can expect from the Apex experience.</h2>
+          <p>Premium brands expect clarity, speed, presentation, and accountability. That is exactly how this service is built.</p>
+        </div>
+        <div class="guarantee-grid">
+          <div class="guarantee-card tilt-card"><h3>High-Trust Presentation</h3><p>Your campaigns, pages, and communication feel premium and credible from first impression to first conversion.</p></div>
+          <div class="guarantee-card tilt-card"><h3>Performance Discipline</h3><p>We focus on data-backed decisions, iteration speed, and constant quality improvement.</p></div>
+          <div class="guarantee-card tilt-card"><h3>Growth Perspective</h3><p>We think beyond ads alone and into the full system that creates revenue for the business.</p></div>
+        </div>
+      </section>
+
+      <section class="section container" id="testimonials">
+        <div class="section-head reveal">
+          <div class="eyebrow">Testimonials</div>
+          <h2>Built to earn trust from ambitious brands.</h2>
+          <p>This experience is designed to feel like a serious agency, not a template. The perception matters because trust changes conversion.</p>
+        </div>
+
+        <div class="marquee-wrap reveal">
+          <div class="marquee">
+            <div class="testimonial"><p>“Apex Growth Ads brought clarity, speed, and premium execution to our campaigns. The lead quality improved almost immediately.”</p><h4>Real Estate Growth Partner</h4><span>Project Marketing Lead</span></div>
+            <div class="testimonial"><p>“They do not feel like an ordinary agency. Their systems, reporting, and creative direction feel built for scale.”</p><h4>Service Brand Founder</h4><span>Business Owner</span></div>
+            <div class="testimonial"><p>“From offer positioning to retargeting, everything felt intentional. We saw stronger conversion efficiency quickly.”</p><h4>Startup Operator</h4><span>Growth Manager</span></div>
+            <div class="testimonial"><p>“Premium brand presentation with performance-focused execution. Exactly the partner ambitious businesses want.”</p><h4>Local Business Director</h4><span>Operations Head</span></div>
+            <div class="testimonial"><p>“Apex Growth Ads brought clarity, speed, and premium execution to our campaigns. The lead quality improved almost immediately.”</p><h4>Real Estate Growth Partner</h4><span>Project Marketing Lead</span></div>
+            <div class="testimonial"><p>“They do not feel like an ordinary agency. Their systems, reporting, and creative direction feel built for scale.”</p><h4>Service Brand Founder</h4><span>Business Owner</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="faq">
+        <div class="section-head center reveal">
+          <div class="eyebrow">FAQ</div>
+          <h2>Questions serious clients usually ask.</h2>
+          <p>Premium design should also be easy to understand and easy to trust. These are the questions serious clients care about before choosing a growth partner.</p>
+        </div>
+
+        <div class="faq-list">
+          <div class="faq-item reveal active"><button class="faq-q"><span>Who is Apex Growth Ads best suited for?</span><span>⌄</span></button><div class="faq-a" style="max-height:220px;"><p>We work best with real estate businesses, local service brands, startups, and ambitious companies that want premium positioning with measurable lead generation and revenue growth.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q"><span>Do you only run Meta Ads?</span><span>⌄</span></button><div class="faq-a"><p>No. We support Meta Ads, Google Ads, retargeting systems, funnel strategy, landing page direction, and creative performance optimization.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q"><span>What makes your agency different?</span><span>⌄</span></button><div class="faq-a"><p>We focus on building revenue systems, not just launching campaigns. That means sharper strategy, better creative direction, stronger retargeting, and a deeper conversion mindset.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q"><span>Are your pricing plans inclusive of GST?</span><span>⌄</span></button><div class="faq-a"><p>Yes. All listed packages are inclusive of GST, making pricing simple and transparent for business owners.</p></div></div>
+          <div class="faq-item reveal"><button class="faq-q"><span>Can you help with real estate projects?</span><span>⌄</span></button><div class="faq-a"><p>Yes. Real estate lead generation, project awareness, site visit campaigns, and premium funnel design are a major focus area for Apex Growth Ads.</p></div></div>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-grid">
+          <div class="panel reveal tilt-card">
+            <div class="eyebrow">Contact Apex</div>
+            <h3 class="contact-title">Build your next growth phase with premium strategy.</h3>
+            <p class="contact-copy">Speak with Apex Growth Ads about your lead generation goals, campaign strategy, funnel design, retargeting, and brand growth opportunities. We help businesses turn attention into qualified leads and qualified leads into revenue.</p>
+            <div class="contact-info">
+              <div class="info">apexgrowthads@gmail.com</div>
+              <div class="info">+91 8886969220</div>
+              <div class="info">Hyderabad, Telangana, India</div>
+            </div>
+            <a href="https://wa.me/918886969220" target="_blank" rel="noopener noreferrer" class="btn primary magnetic" style="margin-top:24px;">WhatsApp Consultation</a>
+          </div>
+
+          <div class="panel reveal tilt-card">
+            <form>
+              <div><label>Full Name</label><input type="text" placeholder="Enter your full name"></div>
+              <div><label>Email</label><input type="email" placeholder="Enter your email"></div>
+              <div><label>Phone</label><input type="text" placeholder="Enter your phone number"></div>
+              <div><label>Company Name</label><input type="text" placeholder="Enter your company name"></div>
+              <div class="full"><label>Message</label><textarea placeholder="Tell us about your goals"></textarea></div>
+              <div class="full"><button type="button" class="btn primary magnetic" style="width:100%;">Book Free Consultation</button></div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ultra-footer">
+      <div class="footer-glow-line"></div>
+      <div class="container footer-grid">
+        <div class="footer-left">
+            <div class="footer-logo">
+
+                <div style="display:flex; align-items:center; gap:14px;">
+              
+                  <!-- LOGO BOX -->
+                  <div style="
+                    padding:8px;
+                    border-radius:16px;
+                    background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.01));
+                    border:1px solid rgba(255,255,255,0.08);
+                    box-shadow: 0 0 15px rgba(255, 50, 50, 0.15);
+                  ">
+                    <img src="logo.jpg" style="
+                      width:42px;
+                      height:42px;
+                      object-fit:cover;
+                      border-radius:10px;
+                      display:block;
+                    ">
+                  </div>
+              
+                  <!-- TEXT -->
+                  <div>
+                    <h3 style="margin:0; font-size:16px; letter-spacing:1px;">
+                      APEX GROWTH ADS
+                    </h3>
+              
+                    <span style="color:#9ca3af; font-size:12px; letter-spacing:0.5px;">
+                      SCALING BRANDS TO PEAK PERFORMANCE
+                    </span>
+                  </div>
+              
+                </div>
+              
+              </div>
+          <p>Apex Growth Ads is a premium performance marketing agency helping businesses scale through data-driven Meta Ads, Google Ads, lead generation systems, funnels, retargeting, and conversion-focused growth execution.</p>
           <div class="socials">
             <a href="#" class="social"><i class="fa-brands fa-facebook-f"></i></a>
             <a href="#" class="social"><i class="fa-brands fa-instagram"></i></a>
@@ -2125,111 +1218,284 @@
             <a href="mailto:apexgrowthads@gmail.com" class="social"><i class="fa-solid fa-envelope"></i></a>
           </div>
         </div>
-
-        <div class="footer-box">
+        <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#services">Services</a></li>
             <li><a href="#results">Results</a></li>
+            <li><a href="#industries">Industries</a></li>
             <li><a href="#pricing">Pricing</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
             <li><a href="#faq">FAQ</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-
-        <div class="footer-box">
+        <div class="footer-col">
           <h4>Services</h4>
           <ul>
             <li>Meta Ads</li>
             <li>Google Ads</li>
             <li>Lead Generation</li>
             <li>Creative Strategy</li>
+            <li>Funnels</li>
             <li>Retargeting</li>
           </ul>
         </div>
       </div>
-
-      <div class="copyright">
-        <span>© 2026 Apex Growth Ads. All rights reserved.</span>
-        <span>Vishnu Vardhan (Founder)</span>
-        <span>India's Premium Performance Marketing Agency</span>
+      <div class="container footer-bottom">
+        <p>© 2026 Apex Growth Ads. All rights reserved.</p>
+        <p class="footer-founder">
+            <span style="color:#ff2b2b; text-shadow: 0 0 8px rgba(225,0,0.7)";>
+                Vishnu Vardhan - Founder & CEO
+                </span>
+                </p>
+        <p>India’s Premium Performance Marketing Agency</p>
       </div>
-    </div>
-  </footer>
-
-  <a href="https://wa.me/918886969220" target="_blank" class="btn floating-whatsapp">
-    <i class="fa-brands fa-whatsapp"></i> <span>Chat Now</span>
-  </a>
-
-  <div class="sticky-cta">
-    <div class="sticky-cta-inner">
-      <div class="sticky-copy">
-        <strong>Ready to grow your business?</strong>
-        <span>Book a free strategy call with Apex Growth Ads today.</span>
-      </div>
-      <div class="sticky-actions">
-        <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-calendar-check"></i> Book Call</a>
-        <a href="https://wa.me/918886969220" target="_blank" class="btn btn-secondary"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
-      </div>
-    </div>
+    </footer>
   </div>
 
-  <script>
-    const menuBtn = document.getElementById("menuBtn");
-    const navLinks = document.getElementById("navLinks");
+  <script type="module">
+    import * as THREE from 'https://unpkg.com/three@0.161.0/build/three.module.js';
 
-    menuBtn.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
+    const canvas = document.getElementById('webgl-canvas');
+    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 100);
+    camera.position.set(0, 0, 10);
+
+    const group = new THREE.Group();
+    scene.add(group);
+
+    const ambient = new THREE.AmbientLight(0xffffff, 1.2);
+    scene.add(ambient);
+
+    const point1 = new THREE.PointLight(0xff3a3a, 18, 40, 2);
+    point1.position.set(3.5, 2.5, 4.5);
+    scene.add(point1);
+
+    const point2 = new THREE.PointLight(0xffffff, 12, 30, 2);
+    point2.position.set(-4, -1.5, 3.5);
+    scene.add(point2);
+
+    const point3 = new THREE.PointLight(0xff6a6a, 8, 25, 2);
+    point3.position.set(0, -4, 5);
+    scene.add(point3);
+
+    const coreGeometry = new THREE.IcosahedronGeometry(1.55, 20);
+    const coreMaterial = new THREE.MeshPhysicalMaterial({
+      color: 0xffffff,
+      metalness: 0.08,
+      roughness: 0.08,
+      transmission: 0.15,
+      thickness: 1.6,
+      transparent: true,
+      opacity: 0.95,
+      emissive: 0x3a0000,
+      emissiveIntensity: 0.35,
+      clearcoat: 1,
+      clearcoatRoughness: 0.08,
+      reflectivity: 1
+    });
+    const core = new THREE.Mesh(coreGeometry, coreMaterial);
+    core.position.set(2.8, 0.2, 0);
+    group.add(core);
+
+    const wire = new THREE.Mesh(
+      new THREE.IcosahedronGeometry(1.95, 3),
+      new THREE.MeshBasicMaterial({ color: 0xff2a2a, wireframe: true, transparent: true, opacity: 0.35 })
+    );
+    wire.position.copy(core.position);
+    group.add(wire);
+
+    const torus1 = new THREE.Mesh(
+      new THREE.TorusGeometry(2.6, 0.03, 16, 200),
+      new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.38 })
+    );
+    torus1.position.copy(core.position);
+    torus1.rotation.x = 1.2;
+    group.add(torus1);
+
+    const torus2 = new THREE.Mesh(
+      new THREE.TorusGeometry(3.0, 0.04, 16, 200),
+      new THREE.MeshBasicMaterial({ color: 0xff2a2a, transparent: true, opacity: 0.28 })
+    );
+    torus2.position.copy(core.position);
+    torus2.rotation.y = 1.1;
+    torus2.rotation.z = 0.4;
+    group.add(torus2);
+
+    const particlesCount = 1200;
+    const posArray = new Float32Array(particlesCount * 3);
+    for (let i = 0; i < particlesCount * 3; i += 3) {
+      posArray[i] = (Math.random() - 0.5) * 26;
+      posArray[i + 1] = (Math.random() - 0.5) * 18;
+      posArray[i + 2] = (Math.random() - 0.5) * 12;
+    }
+
+    const particlesGeo = new THREE.BufferGeometry();
+    particlesGeo.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+    const particlesMat = new THREE.PointsMaterial({
+      color: 0xffffff,
+      size: 0.03,
+      transparent: true,
+      opacity: 0.75,
+      blending: THREE.AdditiveBlending,
+      depthWrite: false
+    });
+    const particles = new THREE.Points(particlesGeo, particlesMat);
+    scene.add(particles);
+
+    const redDustGeo = new THREE.BufferGeometry();
+    const redArray = new Float32Array(500 * 3);
+    for (let i = 0; i < redArray.length; i += 3) {
+      redArray[i] = 2.8 + (Math.random() - 0.5) * 8;
+      redArray[i + 1] = (Math.random() - 0.5) * 8;
+      redArray[i + 2] = (Math.random() - 0.5) * 6;
+    }
+    redDustGeo.setAttribute('position', new THREE.BufferAttribute(redArray, 3));
+    const redDust = new THREE.Points(
+      redDustGeo,
+      new THREE.PointsMaterial({ color: 0xff2a2a, size: 0.04, transparent: true, opacity: 0.65, blending: THREE.AdditiveBlending, depthWrite: false })
+    );
+    scene.add(redDust);
+
+    let mouseX = 0;
+    let mouseY = 0;
+    window.addEventListener('pointermove', (e) => {
+      mouseX = (e.clientX / window.innerWidth) * 2 - 1;
+      mouseY = -(e.clientY / window.innerHeight) * 2 + 1;
     });
 
-    document.querySelectorAll(".nav-links a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
 
-    function handleSubmit(event) {
- event.preventDefault();
+    const clock = new THREE.Clock();
+    function animate() {
+      const t = clock.getElapsedTime();
 
-  const formData = new FormData();
-  formData.append("name", document.getElementById("name").value);
-  formData.append("email", document.getElementById("email").value);
-  formData.append("phone", document.getElementById("phone").value);
-  formData.append("company", document.getElementById("company").value);
-  formData.append("message", document.getElementById("message").value);
+      core.rotation.x = t * 0.35;
+      core.rotation.y = t * 0.55;
+      wire.rotation.x = -t * 0.25;
+      wire.rotation.y = t * 0.45;
+      torus1.rotation.z = t * 0.45;
+      torus2.rotation.x = t * 0.22;
+      torus2.rotation.y = t * 0.34;
 
-  fetch("https://script.google.com/macros/s/AKfycbw9Qvi0zfrm5VJSR9KYWVP4kinguORLeTEYxaZrxHTdpXgWxEXi_qcNJ3vB4AskzVF4/exec", {
-    method: "POST",
-    body: formData
-  })
-  .then(response => response.text())
-  .then(data => {
-    alert("Form submitted successfully ✅");
-    event.target.reset();
-  })
-  .catch(error => {
-    alert("Error submitting form ❌");
-    console.error(error);
-  });
-}
+      core.position.y = 0.2 + Math.sin(t * 1.2) * 0.18;
+      wire.position.y = core.position.y;
+      torus1.position.y = core.position.y;
+      torus2.position.y = core.position.y;
 
-    const observer = new IntersectionObserver((entries) => {
+      group.rotation.y += (mouseX * 0.35 - group.rotation.y) * 0.04;
+      group.rotation.x += (mouseY * 0.18 - group.rotation.x) * 0.04;
+
+      particles.rotation.y = t * 0.02;
+      particles.rotation.x = t * 0.01;
+      redDust.rotation.y = -t * 0.08;
+      redDust.rotation.z = t * 0.04;
+
+      point1.position.x = 3.5 + Math.sin(t * 1.4) * 1.2;
+      point1.position.y = 2.2 + Math.cos(t * 1.1) * 1.1;
+      point2.position.x = -4 + Math.cos(t * 0.9) * 1.5;
+      point2.position.y = -1.6 + Math.sin(t * 1.3) * 1.0;
+
+      renderer.render(scene, camera);
+      requestAnimationFrame(animate);
+    }
+    animate();
+
+    const loader = document.getElementById('loader');
+    window.addEventListener('load', () => setTimeout(() => loader.classList.add('hidden'), 900));
+
+    const cursorGlow = document.getElementById('cursorGlow');
+    window.addEventListener('mousemove', (e) => {
+      cursorGlow.style.transform = `translate(${e.clientX - 190}px, ${e.clientY - 190}px)`;
+    });
+
+    const progress = document.getElementById('progress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.body.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      progress.style.width = pct + '%';
+    });
+
+    const reveals = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
+        if (entry.isIntersecting) entry.target.classList.add('show');
       });
     }, { threshold: 0.12 });
+    reveals.forEach(el => revealObserver.observe(el));
 
-    document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+    const counters = document.querySelectorAll('.counter');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting) return;
+        const el = entry.target;
+        const target = parseInt(el.dataset.target, 10);
+        const duration = 1500;
+        const start = performance.now();
+        const step = (now) => {
+          const p = Math.min((now - start) / duration, 1);
+          const eased = 1 - Math.pow(1 - p, 3);
+          el.textContent = Math.round(target * eased);
+          if (p < 1) requestAnimationFrame(step);
+        };
+        requestAnimationFrame(step);
+        counterObserver.unobserve(el);
+      });
+    }, { threshold: 0.4 });
+    counters.forEach(c => counterObserver.observe(c));
 
-    document.querySelectorAll(".faq-item").forEach(item => {
-      const btn = item.querySelector(".faq-question");
-      btn.addEventListener("click", () => {
-        const isActive = item.classList.contains("active");
-        document.querySelectorAll(".faq-item").forEach(faq => faq.classList.remove("active"));
-        if (!isActive) item.classList.add("active");
+    const faqItems = document.querySelectorAll('.faq-item');
+    faqItems.forEach(item => {
+      const q = item.querySelector('.faq-q');
+      const a = item.querySelector('.faq-a');
+      q.addEventListener('click', () => {
+        const active = item.classList.contains('active');
+        faqItems.forEach(f => {
+          f.classList.remove('active');
+          f.querySelector('.faq-a').style.maxHeight = null;
+        });
+        if (!active) {
+          item.classList.add('active');
+          a.style.maxHeight = a.scrollHeight + 'px';
+        }
+      });
+    });
+
+    const tiltCards = document.querySelectorAll('.tilt-card');
+    tiltCards.forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const px = (e.clientX - rect.left) / rect.width;
+        const py = (e.clientY - rect.top) / rect.height;
+        const ry = (px - 0.5) * 12;
+        const rx = (0.5 - py) * 12;
+        card.style.transform = `perspective(1000px) rotateX(${rx}deg) rotateY(${ry}deg) translateY(-6px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
+
+    const magnetics = document.querySelectorAll('.magnetic');
+    magnetics.forEach(btn => {
+      btn.addEventListener('mousemove', (e) => {
+        const rect = btn.getBoundingClientRect();
+        const x = e.clientX - rect.left - rect.width / 2;
+        const y = e.clientY - rect.top - rect.height / 2;
+        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
+      });
+      btn.addEventListener('mouseleave', () => {
+        btn.style.transform = 'translate(0,0)';
       });
     });
   </script>
