@@ -1164,7 +1164,10 @@
               <div><label>Phone</label><input type="text" placeholder="Enter your phone number"></div>
               <div><label>Company Name</label><input type="text" placeholder="Enter your company name"></div>
               <div class="full"><label>Message</label><textarea placeholder="Tell us about your goals"></textarea></div>
-              <div class="full"><button type="button" class="btn primary magnetic" style="width:100%;">Book Free Consultation</button></div>
+              <div class="full"><button type="button" onclick="sendToWhatsApp()" class="btn primary magnetic" style="width:100%;">
+                Book Free Consultation
+              </button>
+            </div>
             </form>
           </div>
         </div>
@@ -1499,5 +1502,27 @@
       });
     });
   </script>
+
+<script>
+function sendToWhatsApp() {
+  let name = document.querySelector('input[placeholder="Enter your full name"]').value;
+  let email = document.querySelector('input[placeholder="Enter your email"]').value;
+  let phone = document.querySelector('input[placeholder="Enter your phone number"]').value;
+  let company = document.querySelector('input[placeholder="Enter your company name"]').value;
+  let message = document.querySelector('textarea').value;
+
+  let text = `Apex Growth Ads:
+Name: ${name}
+Email: ${email}
+Phone: ${phone}
+Company: ${company}
+Message: ${message}`;
+
+  let encoded = encodeURIComponent(text);
+
+  window.open(`https://wa.me/918886969220?text=${encoded}`, '_blank');
+}
+</script>
+
 </body>
 </html>
